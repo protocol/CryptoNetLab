@@ -7,7 +7,7 @@
 # CryptoNetLab
 A Public Good Cryptography Lab providing technological empowerment by creating secure building blocks for Web 3.0 protocols.
 
-**Welcome to the ResNetLab public repository. In this place, you will be able to find information about our Open Problems, RFPs, Open Positions, Research Areas, Research Projects and much more.** You can also consult the version on the [Protocol Labs Research website](https://research.protocol.ai/research/groups/resnetlab)
+**Welcome to the CryptoNetLab public repository. Here you will be able to learn about and contribute to our Open Problems, RFPs, and Research Projects, as well as keep tabs on what we're planning for the future.** You can also consult the version on the [Protocol Labs Research website](https://research.protocol.ai/research/groups/cryptonetlab)
 
 ## Table of Contents
 
