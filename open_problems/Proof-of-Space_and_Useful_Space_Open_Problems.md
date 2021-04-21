@@ -60,7 +60,7 @@ Note that the "real" persistence of the space depends on the frequency of the au
 
 In Filecoin we are interested in proving *[useful]* space, that is storage space that can be used to keep real-world data. Therefore, we want the advice A of the PoS to encode some real data D, instead of just being a random incompressible sequence of bytes. This is the informal new property we are interested in each time we will talk about **Proof of Useful Space.**
 
-A more formal way to capture the security requirements of the Filecon decentralized storage network is using a proof of useful space that is actually a **Proof of Replication** (PoRep, ref, [[eprint 2018/678]][11]).
+A more formal way to capture the security requirements of the Filecon decentralized storage network is using a proof of useful space that is actually a **Proof of Replication** (PoRep, ref, [eprint 2018/678][11]).
 
 Informally, this means that in addition to the space hardness property seen before for a PoS , the replica (that is the advice that now contains encoded data) has the extraction property. In other words, there is an extraction algorithm that can recover the original data from the interaction with a successful prover during the execution phases.
 
@@ -68,7 +68,7 @@ Informally, this means that in addition to the space hardness property seen befo
 
 ### Problem 1: Simple graph-labeling based PoS in the time model.
 
-So far we have mainly seen two kinds of PoS constructions, one based on *graph labeling* and the other based on *hash tables*. We know that graph-labeling based constructions can achieve good asymptotic parameters and be secure in the time model: the [[Stacked-DRGs]][12] construction achieves both these properties. However, it comes with complicated graph-pebbling proofs (this is common to other graph-labeling construction, see [[eprint 2013/796]{.ul}][10]), graph assumptions (e.g., security based on best known attacks on a DRG graph) and unsatisfactory practical efficiency (eg, the audit frequency is too high). Can we improve on these aspects?
+So far we have mainly seen two kinds of PoS constructions, one based on *graph labeling* and the other based on *hash tables*. We know that graph-labeling based constructions can achieve good asymptotic parameters and be secure in the time model: the [Stacked-DRGs][12] construction achieves both these properties. However, it comes with complicated graph-pebbling proofs (this is common to other graph-labeling construction, see [eprint 2013/796][10]), graph assumptions (e.g., security based on best known attacks on a DRG graph) and unsatisfactory practical efficiency (eg, the audit frequency is too high). Can we improve on these aspects?
 
 #### Directions
 
