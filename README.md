@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://research.protocol.ai/research/groups/cryptonetlab/" title="CryptoNetLab">
-    <img src="https://research.protocol.ai/groups/cryptonetlab/icon.png" width="244" />
+    <img src="https://research.protocol.ai/groups/cryptonetlab/icon.png" width="140" />
   </a>
 </p>
 
