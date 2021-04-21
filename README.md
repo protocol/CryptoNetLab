@@ -11,8 +11,6 @@ A Public Good Cryptography Lab providing technological empowerment by creating s
 
 ## Table of Contents
 
-## Table of Contents
-
 - [The CryptoNetLab](#thecryptonetlab)
   - [Mission & Vision](#mission--vision)
 - [Research](#research)
@@ -22,6 +20,8 @@ A Public Good Cryptography Lab providing technological empowerment by creating s
 - [Publications, Talks, & Tutorials](#publications-talks--tutorials)
 - [Team](#team)
 - [Contact](#contact)
+
+## `CryptoNetLab`
 
 ### Mission & Vision
 
