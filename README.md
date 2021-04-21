@@ -33,13 +33,13 @@ Please [join the discussion](https://github.com/protocol/CryptoNetLab/discussion
 
 ## Research
 
-> CryptoNetlab’s current foci are:
-> 
-> -   **Cryptographic primitives**: Filecoin and other Web 3.0 technologies rely on the performance and security of cryptographic primitives. Our endeavours include Proof of Replication (PoRep), Proof of SpaceTime (PoST), SEALSTACK, SNARKs, and VDFs.
-> -   **Blockchain infrastructure**: We are working to advance the state of the art of generic blockchain constructions.
-> -   **Web 3.0 protocol improvements**: Our research contributes improvements to the transaction layer of the Filecoin protocol and its components, including mining, repair, security, and storage. These improvements may be generalized to other Web 3.0 technologies.
-> 
-> Much of CryptoNetLab’s past work is exhibited in the Filecoin Research [website](https://research.filecoin.io/) and [GitHub repo](https://github.com/filecoin-project/research/).
+CryptoNetlab’s current foci are:
+
+ -   **Cryptographic primitives**: Filecoin and other Web 3.0 technologies rely on the performance and security of cryptographic primitives. Our endeavours include Proof of Replication (PoRep), Proof of SpaceTime (PoST), SEALSTACK, SNARKs, and VDFs.
+ -   **Blockchain infrastructure**: We are working to advance the state of the art of generic blockchain constructions.
+ -   **Web 3.0 protocol improvements**: Our research contributes improvements to the transaction layer of the Filecoin protocol and its components, including mining, repair, security, and storage. These improvements may be generalized to other Web 3.0 technologies.
+
+ Much of CryptoNetLab’s past work is exhibited in the Filecoin Research [website](https://research.filecoin.io/) and [GitHub repo](https://github.com/filecoin-project/research/).
 
 ### Areas
 
