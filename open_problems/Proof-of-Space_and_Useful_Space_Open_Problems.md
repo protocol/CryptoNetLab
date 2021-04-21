@@ -4,7 +4,7 @@
 
 This document contains a list of research questions related to Proof of Space (and useful space) constructions that can have high impact for the future versions of the Filecoin protocol.
 
-**[Terminology] **
+**[Terminology]**
 
 [Proof of Space] 
 
