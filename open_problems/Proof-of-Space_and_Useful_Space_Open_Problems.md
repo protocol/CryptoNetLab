@@ -6,27 +6,27 @@ This document contains a list of research questions related to Proof of Space (a
 
 **[Terminology]**
 
-[Proof of Space] 
+    [Proof of Space] 
 
-[Filecoin, Useful Space and Replication] 
+    [Filecoin, Useful Space and Replication] 
 
 **[Problems and Directions]**
 
-[Problem 1: Simple graph-labeling based PoS in the time model.] 
+    [Problem 1: Simple graph-labeling based PoS in the time model.] 
 
-[Problem 2: Graph-labeling based PoS in the cost model.] 
+    [Problem 2: Graph-labeling based PoS in the cost model.] 
 
-[Problem 3: Less communication rounds for repeated audits.] 
+    [Problem 3: Less communication rounds for repeated audits.] 
 
-[Problem 4: Proof of Useful Space from hash-based PoS] 
+    [Problem 4: Proof of Useful Space from hash-based PoS] 
 
-[Problem 5: Proof of Useful Space with Data Updatability]
+    [Problem 5: Proof of Useful Space with Data Updatability]
 
-[Problem 6: Tight hash-table based PoS construction] 
+    [Problem 6: Tight hash-table based PoS construction] 
 
-[Problem 7: Incremental Cost for Parameters Upgrades] 
+    [Problem 7: Incremental Cost for Parameters Upgrades] 
 
-[Problem 8: Verifiable Capacity Bound Functions]
+    [Problem 8: Verifiable Capacity Bound Functions]
 
 
 
