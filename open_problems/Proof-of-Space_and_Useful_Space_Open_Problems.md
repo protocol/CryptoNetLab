@@ -182,7 +182,7 @@ In Filecoin we do not have a dynamic way of tuning the initialization parameters
 
 Recently introduced by Ateniese et al., [VCBFs][19] can be described as a space analogous to VDFs. Intuitively, anyone computing a VCBF must read a minimum amount of bits in memory. The key part of a VCBF (which makes it similar to a VDF) is the fact that it is asymmetric: while evaluation is expensive, verification is efficient. This is enforced by using a Verifiable Computation (VC) scheme where the function that has to be verifiably computed is the polynomial itself. Notably, the VC scheme proposed in the paper needs to run a setup phase for each polynomial being evaluated. Moreover, the creation of the polynomial coefficients need to be computed in a trusted manner. The general question here is: can we use a VCBF to design a PoS in the cost model?
 
-Directions
+#### Directions
 
 1.  Can we use VCBFs in order to make regeneration expensive for malicious provers? For example, take a graph-labelling based PoS and use VCBF in the place of the hash function to label the graph (in order to make this operation more expensive). Open problems:
 
