@@ -60,7 +60,7 @@ Note that the "real" persistence of the space depends on the frequency of the au
 
 In Filecoin we are interested in proving *[useful]* space, that is storage space that can be used to keep real-world data. Therefore, we want the advice A of the PoS to encode some real data D, instead of just being a random incompressible sequence of bytes. This is the informal new property we are interested in each time we will talk about **Proof of Useful Space.**
 
-A more formal way to capture the security requirements of the Filecon decentralized storage network is using a proof of useful space that is actually a **Proof of Replication** (PoRep, ref, [eprint 2018/678][11]).
+A more formal way to capture the security requirements of the Filecoin decentralized storage network is using a proof of useful space that is actually a **Proof of Replication** (PoRep, ref, [eprint 2018/678][11]).
 
 Informally, this means that in addition to the space hardness property seen before for a PoS , the replica (that is the advice that now contains encoded data) has the extraction property. In other words, there is an extraction algorithm that can recover the original data from the interaction with a successful prover during the execution phases.
 
@@ -82,7 +82,7 @@ In general, find a graph that gives smaller hidden constants in the prover and v
 
 #### What and Why is important for Filecoin 
 
-Filecon uses a PoRep that is constructed taking the advice A of a Stacked-DRGs PoS and adding to it the data D (ie, a "*replica"* R is defined as R = D + A, "additive compiler")[^1]. Improving the concrete efficiency or the security assumptions of Stacked-DRGs will overall improve the Filecoin network.
+Filecoin uses a PoRep that is constructed taking the advice A of a Stacked-DRGs PoS and adding to it the data D (ie, a "*replica"* R is defined as R = D + A, "additive compiler")[^1]. Improving the concrete efficiency or the security assumptions of Stacked-DRGs will overall improve the Filecoin network.
 
 ### Problem 2: Graph-labeling based PoS in the cost model.
 
