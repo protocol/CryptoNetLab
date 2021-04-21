@@ -6,51 +6,30 @@ This document contains a list of research questions related to Proof of Space (a
 
 **[Terminology] **
 
-> [Proof of Space] 
->
-> [Filecoin, Useful Space and Replication] 
+[Proof of Space] 
+
+[Filecoin, Useful Space and Replication] 
 
 **[Problems and Directions]**
 
-> [Problem 1: Simple graph-labeling based PoS in the time model.] 
->
-> [Directions] 
->
-> [What and Why is important for Filecoin] 
->
-> [Problem 2: Graph-labeling based PoS in the cost model.] 
->
-> [Directions][1]
->
-> [What and Why is important for Filecoin][2] 
->
-> [Problem 3: Less communication rounds for repeated audits.] 
-> [Directions][3] 
->
-> [What and Why is important for Filecoin][4]
->
-> [Problem 4: Proof of Useful Space from hash-based PoS] 
->
-> [Directions][5] 
->
-> [What and Why is important for Filecoin][6] 
->
-> [Problem 5: Proof of Useful Space with Data Updatability]
->
-> [What and Why is important for Filecoin][7]
->
-> [Problem 6: Tight hash-table based PoS construction] 
->
-> [What and Why is important for Filecoin][8] 
->
-> [Problem 7: Incremental Cost for Parameters Upgrades] 
->
-> [What and Why is important for Filecoin][9] 
->
-> [Problem 8: Verifiable Capacity Bound Functions]
->  
-> [Why it is important to Filecoin] 
-> 
+[Problem 1: Simple graph-labeling based PoS in the time model.] 
+
+[Problem 2: Graph-labeling based PoS in the cost model.] 
+
+[Problem 3: Less communication rounds for repeated audits.] 
+
+[Problem 4: Proof of Useful Space from hash-based PoS] 
+
+[Problem 5: Proof of Useful Space with Data Updatability]
+
+[Problem 6: Tight hash-table based PoS construction] 
+
+[Problem 7: Incremental Cost for Parameters Upgrades] 
+
+[Problem 8: Verifiable Capacity Bound Functions]
+
+[Why it is important to Filecoin] 
+
 ## Terminology 
 
 ### Proof of Space
@@ -59,9 +38,6 @@ A **Poof of Space** (PoS, see for example: [[eprint 2013/796]{.ul}][10]) is a pr
 
 -   *Initialization* (ie, setup phase): on public input N, an *advice* (eg, vector of random data) of size N is created. The advice is stored by the prover, while the verifier does not know the advice (in some protocols, the verifier may know a commitment to the advice).
 
-```{=html}
-<!-- -->
-```
 -   *Execution* (ie, audit phase): the verifier and the prover run a protocol and the verifier outputs reject/accept. Accept means that the verifier is convinced that the prover stores the advice. This phase can be repeated many times.
 
 A PoS is sound if a verifier interacting with a malicious prover who
@@ -82,9 +58,9 @@ Note that the "real" persistence of the space depends on the frequency of the au
 
 ### Filecoin, Useful Space and Replication
 
-In Filecoin we are interested in proving *[useful]{.ul}* space, that is storage space that can be used to keep real-world data. Therefore, we want the advice A of the PoS to encode some real data D, instead of just being a random incompressible sequence of bytes. This is the informal new property we are interested in each time we will talk about **Proof of Useful Space.**
+In Filecoin we are interested in proving *[useful]* space, that is storage space that can be used to keep real-world data. Therefore, we want the advice A of the PoS to encode some real data D, instead of just being a random incompressible sequence of bytes. This is the informal new property we are interested in each time we will talk about **Proof of Useful Space.**
 
-A more formal way to capture the security requirements of the Filecon decentralized storage network is using a proof of useful space that is actually a **Proof of Replication** (PoRep, ref, [[eprint 2018/678]{.ul}][11]).
+A more formal way to capture the security requirements of the Filecon decentralized storage network is using a proof of useful space that is actually a **Proof of Replication** (PoRep, ref, [[eprint 2018/678]][11]).
 
 Informally, this means that in addition to the space hardness property seen before for a PoS , the replica (that is the advice that now contains encoded data) has the extraction property. In other words, there is an extraction algorithm that can recover the original data from the interaction with a successful prover during the execution phases.
 
@@ -92,7 +68,7 @@ Informally, this means that in addition to the space hardness property seen befo
 
 ### Problem 1: Simple graph-labeling based PoS in the time model.
 
-So far we have mainly seen two kinds of PoS constructions, one based on *graph labeling* and the other based on *hash tables*. We know that graph-labeling based constructions can achieve good asymptotic parameters and be secure in the time model: the [[Stacked-DRGs]{.ul}][12] construction achieves both these properties. However, it comes with complicated graph-pebbling proofs (this is common to other graph-labeling construction, see [[eprint 2013/796]{.ul}][10]), graph assumptions (e.g., security based on best known attacks on a DRG graph) and unsatisfactory practical efficiency (eg, the audit frequency is too high). Can we improve on these aspects?
+So far we have mainly seen two kinds of PoS constructions, one based on *graph labeling* and the other based on *hash tables*. We know that graph-labeling based constructions can achieve good asymptotic parameters and be secure in the time model: the [[Stacked-DRGs]][12] construction achieves both these properties. However, it comes with complicated graph-pebbling proofs (this is common to other graph-labeling construction, see [[eprint 2013/796]{.ul}][10]), graph assumptions (e.g., security based on best known attacks on a DRG graph) and unsatisfactory practical efficiency (eg, the audit frequency is too high). Can we improve on these aspects?
 
 #### Directions
 
