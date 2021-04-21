@@ -24,8 +24,6 @@ A Public Good Cryptography Lab providing technological empowerment by creating s
     <th><b>Short Description</b></th>
   </tr>
    
-    <tr>
-     </tr>
   </table>
   
   ### Projects
@@ -38,7 +36,14 @@ A Public Good Cryptography Lab providing technological empowerment by creating s
 ### Publications, Talks & Trainings
 
 ### Team
+[CryptoNetLab | Protocol Labs Research](https://research.protocol.ai/groups/cryptonetlab/)
 
+> -   [Nicola Greco](https://research.protocol.ai/authors/nicola-greco)
+> -   [Irene Giacomelli](https://research.protocol.ai/authors/irene-giacomelli)
+> -   [Anca Nitulescu](https://research.protocol.ai/authors/anca-nitulescu/)
+> -   [Luca Nizzardo](https://research.protocol.ai/authors/luca-nizzardo)
+> -   [Sarah Azouvi](https://research.protocol.ai/authors/sarah-azouvi)
+> -   [Nicolas Gailly](https://research.protocol.ai/authors/nicolas-gailly)
 
 ### Contact
 
