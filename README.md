@@ -23,7 +23,18 @@ A Public Good Cryptography Lab providing technological empowerment by creating s
     <th><b>Open Problem(s)</b></th>
     <th><b>Short Description</b></th>
   </tr>
-   
+   <tr>
+    <th><b>Resarch Area One</b></th>
+    <th>Open Problem</th>
+    <th></th>
+  </tr>
+
+  <tr>
+    <th><b>Research area 2</b></th>
+    <th>OPen Problem</th>
+    <th></th>
+  </tr>
+ 
   </table>
   
   ### Projects
