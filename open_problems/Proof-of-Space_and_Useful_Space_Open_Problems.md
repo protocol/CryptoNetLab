@@ -1,57 +1,56 @@
 ---
-title: "[]{#_8f4nlz2ha974 .anchor}Proof of Space and Useful Space - Open Problems"
+# Proof of Space and Useful Space - Open Problems"
 ---
 
 This document contains a list of research questions related to Proof of Space (and useful space) constructions that can have high impact for the future versions of the Filecoin protocol.
 
-**[Terminology] 1**
+**[Terminology] **
 
-> [Proof of Space] 1
+> [Proof of Space] 
 >
-> [Filecoin, Useful Space and Replication] 2
+> [Filecoin, Useful Space and Replication] 
 
-**[Problems and Directions] 3**
+**[Problems and Directions]**
 
-> [Problem 1: Simple graph-labeling based PoS in the time model.] 3
+> [Problem 1: Simple graph-labeling based PoS in the time model.] 
 >
-> [Directions] 3
+> [Directions] 
 >
-> [What and Why is important for Filecoin] 3
+> [What and Why is important for Filecoin] 
 >
-> [Problem 2: Graph-labeling based PoS in the cost model.] 3
+> [Problem 2: Graph-labeling based PoS in the cost model.] 
 >
-> [Directions][1] 4
+> [Directions][1]
 >
-> [What and Why is important for Filecoin][2] 4
+> [What and Why is important for Filecoin][2] 
 >
-> [Problem 3: Less communication rounds for repeated audits.] 4
+> [Problem 3: Less communication rounds for repeated audits.] 
+> [Directions][3] 
 >
-> [Directions][3] 5
+> [What and Why is important for Filecoin][4]
 >
-> [What and Why is important for Filecoin][4] 5
+> [Problem 4: Proof of Useful Space from hash-based PoS] 
 >
-> [Problem 4: Proof of Useful Space from hash-based PoS] 5
+> [Directions][5] 
 >
-> [Directions][5] 5
+> [What and Why is important for Filecoin][6] 
 >
-> [What and Why is important for Filecoin][6] 5
+> [Problem 5: Proof of Useful Space with Data Updatability]
 >
-> [Problem 5: Proof of Useful Space with Data Updatability] 6
+> [What and Why is important for Filecoin][7]
 >
-> [What and Why is important for Filecoin][7] 6
+> [Problem 6: Tight hash-table based PoS construction] 
 >
-> [Problem 6: Tight hash-table based PoS construction] 6
+> [What and Why is important for Filecoin][8] 
 >
-> [What and Why is important for Filecoin][8] 7
+> [Problem 7: Incremental Cost for Parameters Upgrades] 
 >
-> [Problem 7: Incremental Cost for Parameters Upgrades] 7
+> [What and Why is important for Filecoin][9] 
 >
-> [What and Why is important for Filecoin][9] 7
->
-> [Problem 8: Verifiable Capacity Bound Functions] 7
->
-> [Why it is important to Filecoin] 8
-
+> [Problem 8: Verifiable Capacity Bound Functions]
+>  
+> [Why it is important to Filecoin] 
+> 
 ## Terminology 
 
 ### Proof of Space
