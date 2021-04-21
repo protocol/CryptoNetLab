@@ -19,7 +19,6 @@ A Public Good Cryptography Lab providing technological empowerment by creating s
   - [Areas](#research)
   - [Projects](#research)
   - [Collaborations](#collaborations)
-- [Collab projects tracking threads](#collab-projects-tracking-threads)
 - [Publications, Talks, & Tutorials](#publications-talks--tutorials)
 - [Team](#team)
 - [Contact](#contact)
