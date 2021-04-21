@@ -20,7 +20,7 @@ A Public Good Cryptography Lab providing technological empowerment by creating s
   - [Projects](#research)
   - [Collaborations](#collaborations)
 - [Collab projects tracking threads](#collab-projects-tracking-threads)
-- [Publications, Talks & Trainings](#publications-talks--trainings)
+- [Publications, Talks, & Tutorials](#publications-talks--tutorials)
 - [Team](#team)
 - [Contact](#contact)
 
@@ -63,7 +63,7 @@ A Public Good Cryptography Lab providing technological empowerment by creating s
   ### Collaborations
   
   
-### Publications, Talks & Trainings
+### Publications, Talks, & Tutorials
 
 ### Team
 [CryptoNetLab | Protocol Labs Research](https://research.protocol.ai/groups/cryptonetlab/)
