@@ -7,11 +7,11 @@
 # CryptoNetLab
 A Public Good Cryptography Lab providing technological empowerment by creating secure building blocks for Web 3.0 protocols.
 
-**Welcome to the CryptoNetLab public repository. Here you will be able to learn about and contribute to our Open Problems, RFPs, and Research Projects, as well as keep tabs on what we're planning for the future.** You can also consult the version on the [Protocol Labs Research website](https://research.protocol.ai/research/groups/cryptonetlab)
+**Welcome to the CryptoNetLab public repository. Here you will be able to learn about and contribute to our Open Problems, RFPs, and Research Projects, as well as keep tabs on what we're planning for the future.** You can also consult the version on the [Protocol Labs Research website](https://research.protocol.ai/groups/cryptonetlab/)
 
 ## Table of Contents
 
-- [The CryptoNetLab](#thecryptonetlab)
+- [The CryptoNetLab](#cryptonetlab)
   - [Mission & Vision](#mission--vision)
 - [Research](#research)
   - [Areas](#research)
