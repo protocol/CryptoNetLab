@@ -5,7 +5,6 @@
 </p>
 
 # CryptoNetLab
-A Public Good Cryptography Lab providing technological empowerment by creating secure building blocks for Web 3.0 protocols.
 
 **Welcome to the CryptoNetLab public repository. Here you will be able to learn about and contribute to our Open Problems, RFPs, and Research Projects, as well as keep tabs on what we're planning for the future.** You can also consult the version on the [Protocol Labs Research website](https://research.protocol.ai/groups/cryptonetlab/)
 
@@ -22,10 +21,25 @@ A Public Good Cryptography Lab providing technological empowerment by creating s
 - [Contact](#contact)
 
 ## `CryptoNetLab`
+CryptoNetLab develops and applies new cryptographic tools to secure computation and communication systems.
+We facilitate the development and incorporation of cryptographic tools to increase security and privacy of communication, and engender new capabilities across the Web 3.0 stack. Much of our past and current work includes designing, proving, and improving the building blocks enabling Filecoin, a decentralized storage network.
+
 
 ### Mission & Vision
 
+CryptoNetLab aims to function as a Public Good Cryptography Lab providing technological empowerment to the creators and users of Web 3.0 technologies. We prefer to work collaboratively following a distributed and permissionless research model: our goal is to become a pass-through layer to cryptography research.
+
+Please [join the discussion](https://github.com/protocol/CryptoNetLab/discussions) to learn how you can work with us!
+
 ## Research
+
+> CryptoNetlab’s current foci are:
+> 
+> -   **Cryptographic primitives**: Filecoin and other Web 3.0 technologies rely on the performance and security of cryptographic primitives. Our endeavours include Proof of Replication (PoRep), Proof of SpaceTime (PoST), SEALSTACK, SNARKs, and VDFs.
+> -   **Blockchain infrastructure**: We are working to advance the state of the art of generic blockchain constructions.
+> -   **Web 3.0 protocol improvements**: Our research contributes improvements to the transaction layer of the Filecoin protocol and its components, including mining, repair, security, and storage. These improvements may be generalized to other Web 3.0 technologies.
+> 
+> Much of CryptoNetLab’s past work is exhibited in the Filecoin Research [website](https://research.filecoin.io/) and [GitHub repo](https://github.com/filecoin-project/research/).
 
 ### Areas
 
@@ -61,11 +75,11 @@ A Public Good Cryptography Lab providing technological empowerment by creating s
   
   ### Collaborations
   
+We are very interested in forming collaborations with researchers and engineers working in our fields of interest, and we offer several grants and research fellowships to support these working relationships.
   
 ### Publications, Talks, & Tutorials
 
 ### Team
-[CryptoNetLab | Protocol Labs Research](https://research.protocol.ai/groups/cryptonetlab/)
 
 > -   [Nicola Greco](https://research.protocol.ai/authors/nicola-greco)
 > -   [Irene Giacomelli](https://research.protocol.ai/authors/irene-giacomelli)
