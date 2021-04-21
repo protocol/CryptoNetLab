@@ -1,5 +1,5 @@
 ---
-# Proof of Space and Useful Space - Open Problems"
+# Proof of Space and Useful Space - Open Problems
 ---
 
 This document contains a list of research questions related to Proof of Space (and useful space) constructions that can have high impact for the future versions of the Filecoin protocol.
@@ -80,7 +80,7 @@ To improve the Stacked-DRGs construction:
 
 In general, find a graph that gives smaller hidden constants in the prover and verifier running time and in the proof size.
 
-#### What and Why is important for Filecoin 
+#### What it is and Why it is important for Filecoin 
 
 Filecoin uses a PoRep that is constructed taking the advice A of a Stacked-DRGs PoS and adding to it the data D (ie, a "*replica"* R is defined as R = D + A, "additive compiler")[^1]. Improving the concrete efficiency or the security assumptions of Stacked-DRGs will overall improve the Filecoin network.
 
@@ -99,7 +99,7 @@ Can a graph-labeling based construction be used in this model? While researching
 
     -   We have a proposed graph construction, based on stacking bipartite expanders and "butterfly-style" graphs for which we know how to prove the computation/storage tradeoff and we conjecture a computation/storage/memory tradeoff. Proving this second tradeoff, will positively answer the questions posed above.
 
-#### What and Why is important for Filecoin 
+#### What it is and Why it is important for Filecoin 
 
 The cost model is used to argue the security of an important piece of the Filecoin system: the WindowPoSt protocol (ie, periodic repetition of the audit phase of the PoRep based on the Stacked-DRGs PoS described above). Designing a graph-labeling PoS with optimal parameters in the cost model can improve the practical efficiency of WindowPoSt (eg, less frequent check or smaller proof size). Moreover, if the new PoS has a *fast initialization phase*, this will allow faster power on-boarding (ie, the blockchain can grow faster) and shorter retrieval time for the data.
 
@@ -126,7 +126,7 @@ How can we enforce different execution proofs to be spaced out without requiring
 
 1.  Are there solutions that do not use VDF?
 
-#### What and Why is important for Filecoin
+#### What it is and Why it is important for Filecoin 
 
 In Filecoin, storage is repeatedly audited running periodical execution phases of the Stacked-DRGs PoS. If we find a way to "pack together" several executions we can reduce the on-chain footprint of storage audit.
 
@@ -140,7 +140,7 @@ We know how to compile a graph-labeling based PoS into a Proof of Useful Space u
 
     -   For example: Is it possible to inject data inside the Proof of Space while running the initialization step instead of doing the addition at the end?
 
-#### What and Why is important for Filecoin
+#### What it is and Why it is important for Filecoin 
 
 One downside of the current Filecoin Proof of Replication based on Stacked-DRGs is represented by the need of a challenge response protocol at initialization time, where the prover has to open multiple positions of the replica in order to prove that the encoding of data has been done correctly. Getting rid of this step would be highly beneficial both for reduced on-chain footprint and for minimizing the required interaction (note that due to a non-negligible soundness error, at the moment we are not using Fiat Shamir). Moreover, constructions based on hash tables rather than graph labeling may be easier to analyze and implement.
 
@@ -156,8 +156,7 @@ Updating the data encoded and stored with a Proof of Useful Space can be as expe
 
     -   Note that we can update a CC sector with replica R, which encodes zeros, to a real data without re-running initialization. Indeed the prover can get a new replica that encodes D just computing R' = R + Enc(D, rand) where rand is a random seed that is revealed to the prover on;y after commD is made public on chain. However, the general update problem is not solved: it is still unclear how to update R\' to encode other real world data D' ≠ D.
 
-#### What and Why is important for Filecoin
-
+#### What it is and Why it is important for Filecoin 
 There are two main reasons for which this aspect is crucial:
 
 -   Having an efficient way to update data into a sector would make the storage market much more efficient. Users could update data into a sector without incurring in the current overhead.
@@ -166,7 +165,7 @@ There are two main reasons for which this aspect is crucial:
 
 While we have tight (ie, with negligible spacegap) PoS constructions based on graph-pebbling (eg, Stacked-DRGs), it is not clear if and how we can achieve such a result with hash table-based constructions.
 
-#### What and Why is important for Filecoin
+#### What it is and Why it is important for Filecoin 
 
 Hash tables are a way to get PoS constructions that have a simpler analysis compared with graph-labelling based constructions. If we can achieve tightness, and at the same time we can solve [Problem 4][Problem 4: Proof of Useful Space from hash-based PoS], we would have an alternative to Stacked-DRG which has a simple analysis (no need of graph assumptions) and a non-interactive initialization phase.
 
@@ -174,7 +173,7 @@ Hash tables are a way to get PoS constructions that have a simpler analysis comp
 
 For a PoS designed in a cost model, the parameters of the initialization phase are chosen as a function of the ratio between cost of computation and cost of storage (in order to make storing the cheapest strategy to pass the adutids). If this ratio changes, we would like that the advices already created can be "upgraded" running an algorithm that costs less than re-running the whole initialization with upgraded parameters. We know of hash-table PoS that have this property (ref [eprint 2016/035][13]). Can we design a graph-labeling construction with upgradable parameters? See [Problem 2][Problem 2: Graph-labeling based PoS in the cost model.].
 
-#### What and Why is important for Filecoin
+#### What it is and Why it is important for Filecoin 
 
 In Filecoin we do not have a dynamic way of tuning the initialization parameters in order to face the changes of costs (the ratio computation/storage over time). As a result, if the cost of computation/storage decreases significantly, rationality of storing could not be argued anymore by using the WindowPoSt protocol (note that we have another protocol, WinningPoSt, that will like keep storing as the rational option). Having a way to upgrade our parameters for initialization based on the dynamic of computation/storage cost would solve this problem.
 
@@ -192,7 +191,7 @@ Recently introduced by Ateniese et al., [VCBFs][19] can be described as a space 
 
     c.  Is it possible to get rid of trusted setup for polynomial coefficients? How can we mitigate this limitation (for instance, is it possible to re-randomize polynomials?)
 
-#### Why it is important to Filecoin
+#### WWhat it is and Why it is important for Filecoin 
 
 Having a tool like VCBFs that can be applied to our proofs as mentioned above can be highly beneficial in terms of Proof of Space complexity. If VCBF can grant additional cost/latency each time partial reconstruction is put in place, this would dramatically simplify our analysis and possibly make our construction simpler. Moreover, since we currently are in the cost model, and memory access cost can be efficiently estimated, VCBF seems to be in principle a really nice tool to enforce rationality of storage rather than regeneration in our security model.
 
