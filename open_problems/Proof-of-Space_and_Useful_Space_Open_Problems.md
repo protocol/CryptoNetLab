@@ -28,7 +28,7 @@ This document contains a list of research questions related to Proof of Space (a
 
 [Problem 8: Verifiable Capacity Bound Functions]
 
-[Why it is important to Filecoin] 
+
 
 ## Terminology 
 
