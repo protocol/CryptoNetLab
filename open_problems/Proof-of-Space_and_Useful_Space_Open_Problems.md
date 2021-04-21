@@ -34,7 +34,7 @@ This document contains a list of research questions related to Proof of Space (a
 
 ### Proof of Space
 
-A **Poof of Space** (PoS, see for example: [[eprint 2013/796]{.ul}][10]) is a protocol that allows a prover to convince a verifier that he has a minimum specified amount of space (ie, used storage). More precisely in a PoS protocol we have two main sub-protocols:
+A **Poof of Space** (PoS, see for example: [eprint 2013/796][10]) is a protocol that allows a prover to convince a verifier that he has a minimum specified amount of space (ie, used storage). More precisely in a PoS protocol we have two main sub-protocols:
 
 -   *Initialization* (ie, setup phase): on public input N, an *advice* (eg, vector of random data) of size N is created. The advice is stored by the prover, while the verifier does not know the advice (in some protocols, the verifier may know a commitment to the advice).
 
@@ -86,8 +86,8 @@ Filecon uses a PoRep that is constructed taking the advice A of a Stacked-DRGs P
 
 ### Problem 2: Graph-labeling based PoS in the cost model.
 
-We know that construction based on hash-tables can be used in the cost model (eg, [[eprint 2016/035]{.ul}][13]).\
-Can a graph-labeling based construction be used in this model? While researching this direction we found out the [[Stacked-Expanders]{.ul}][14] PoS, can be used in the cost model. Indeed, adapting the pebbling analysis used for the Stacked-DRG graph for the stacked-expanders graph we are able to count the number of hash calls required to answer an audit challenge when the storage requirement is not fulfilled. Then, assuming a price for each hash call, we can estimate the cost for a malicious prover that deletes more than a fraction of the advice. However, this PoS does not achieve a good enough space-computation tradeoff, we only know that deleting a fraction larger than the spacegap requires a minimum number of hash. Can we design graph-labelling constructions, native in the cost model, with a better tradeoff? Moreover, hash-table construction has the "upgradability property": if the ratio between cost of computation and cost of storage change, the advices already created can be "upgraded" running an algorithm that costs less than re-running the whole initialization with upgraded parameters. Can we design graph-labeling constructions, native in the cost model, with the same property? [[See Problem 7.]{.ul}][15]
+We know that construction based on hash-tables can be used in the cost model (eg, [eprint 2016/035][13]).\
+Can a graph-labeling based construction be used in this model? While researching this direction we found out the [Stacked-Expanders][14] PoS, can be used in the cost model. Indeed, adapting the pebbling analysis used for the Stacked-DRG graph for the stacked-expanders graph we are able to count the number of hash calls required to answer an audit challenge when the storage requirement is not fulfilled. Then, assuming a price for each hash call, we can estimate the cost for a malicious prover that deletes more than a fraction of the advice. However, this PoS does not achieve a good enough space-computation tradeoff, we only know that deleting a fraction larger than the spacegap requires a minimum number of hash. Can we design graph-labelling constructions, native in the cost model, with a better tradeoff? Moreover, hash-table construction has the "upgradability property": if the ratio between cost of computation and cost of storage change, the advices already created can be "upgraded" running an algorithm that costs less than re-running the whole initialization with upgraded parameters. Can we design graph-labeling constructions, native in the cost model, with the same property? [See Problem 7.][15]
 
 #### Directions
 
@@ -95,7 +95,7 @@ Can a graph-labeling based construction be used in this model? While researching
 
     -   Note that a graph-pebbling PoS designed in the cost model could achieve a *fast initialization phase* in practice thanks to the use of parallelization (ie, the initialization algorithm that the prover has to run is highly parallelizable). On the other hand, such a result is impossible in the time model where parallelization of the computation could break the time bound.
 
-2.  More in general, what is the best way to estimate the cost of a computation like labeling a graph using a hash function (assuming that some nodes already have labels)? Before we talked about counting the number of hash calls needed as a function of the labels stored . Another interesting approach is looking at something similar to [[bandwidth hardness]{.ul}][16] and express the cost of the labeling operation as a tradeoff of *memory accesses*, computation (hash call) and storage. In this case the questions are: How to design a graph that can provide precise tradeoff between storage, memory access and computation for the labeling operation? And which techniques can we use to prove the tradeoff? Could we use some of the graphs used for memory-hard function analysis? Other techniques?
+2.  More in general, what is the best way to estimate the cost of a computation like labeling a graph using a hash function (assuming that some nodes already have labels)? Before we talked about counting the number of hash calls needed as a function of the labels stored . Another interesting approach is looking at something similar to [bandwidth hardness][16] and express the cost of the labeling operation as a tradeoff of *memory accesses*, computation (hash call) and storage. In this case the questions are: How to design a graph that can provide precise tradeoff between storage, memory access and computation for the labeling operation? And which techniques can we use to prove the tradeoff? Could we use some of the graphs used for memory-hard function analysis? Other techniques?
 
     -   We have a proposed graph construction, based on stacking bipartite expanders and "butterfly-style" graphs for which we know how to prove the computation/storage tradeoff and we conjecture a computation/storage/memory tradeoff. Proving this second tradeoff, will positively answer the questions posed above.
 
@@ -123,9 +123,7 @@ How can we enforce different execution proofs to be spaced out without requiring
 
     -   Note that using VDFs also requires research in the area of special hardware and algorithm complexity in order to precisely know the A~max~ parameter.
 
-```{=html}
-<!-- -->
-```
+
 1.  Are there solutions that do not use VDF?
 
 #### What and Why is important for Filecoin
@@ -134,11 +132,11 @@ In Filecoin, storage is repeatedly audited running periodical execution phases o
 
 ### Problem 4: Proof of Useful Space from hash-based PoS
 
-We know how to compile a graph-labeling based PoS into a Proof of Useful Space using the "additive compiler". Is the same compiler good for hash-table based constructions? In particular, hash-based constructions, such as the one in [[eprint 2017/893]{.ul}][17], are appealing because they naturally have a non-interactive initialization phase. What is the best way to embed datas inside the advice of a hash-table based PoS that maintains the non-interactivity?,
+We know how to compile a graph-labeling based PoS into a Proof of Useful Space using the "additive compiler". Is the same compiler good for hash-table based constructions? In particular, hash-based constructions, such as the one in [eprint 2017/893][17], are appealing because they naturally have a non-interactive initialization phase. What is the best way to embed datas inside the advice of a hash-table based PoS that maintains the non-interactivity?,
 
 #### Directions
 
--   Does the concepts of catalytic space and replication (along with the examples) sketched in Pietrzak's [[paper]{.ul}][18] help in this sense?
+-   Does the concepts of catalytic space and replication (along with the examples) sketched in Pietrzak's [paper][18] help in this sense?
 
     -   For example: Is it possible to inject data inside the Proof of Space while running the initialization step instead of doing the addition at the end?
 
@@ -152,7 +150,7 @@ Updating the data encoded and stored with a Proof of Useful Space can be as expe
 
 Directions
 
-1.  "Local encoding": That is, keep the additive construction, but make the advice depending only on a small piece of data. For example, say that data are divided into blocks of 32 bytes each (or other sizes), then we use an advice that has the same block structure and for which the i-th block can be generated by re-computing few other blocks (in principle even zero other blocks). This would give much more flexibility: to update the block i in the data the prover needs to recompute only a few advice blocks instead of re-running entirely the initialization. This solution could work well with Proof of Useful Space constructed on top of hash-table based PoS. See [[Problem 4]{.ul}][Problem 4: Proof of Useful Space from hash-based PoS].
+1.  "Local encoding": That is, keep the additive construction, but make the advice depending only on a small piece of data. For example, say that data are divided into blocks of 32 bytes each (or other sizes), then we use an advice that has the same block structure and for which the i-th block can be generated by re-computing few other blocks (in principle even zero other blocks). This would give much more flexibility: to update the block i in the data the prover needs to recompute only a few advice blocks instead of re-running entirely the initialization. This solution could work well with Proof of Useful Space constructed on top of hash-table based PoS. See [Problem 4][Problem 4: Proof of Useful Space from hash-based PoS].
 
 2.  In the idea sketched above, the updated cost is linear in the size of the update, which is not ideal. As an example, this would be acceptable in case of updating a small portion of the data, but would not be any beneficial for a complete data update. For example, for Filecoin we are interested in the possibility of transitioning from a replica that encodes no useful data (eg, zeros, called "Committed Capacity, CC, sector") to a replica that encodes useful data from a client ("Real Data sector"). Can we have the initialization cost as a real one time cost per replica, no matter what happens to the data encoded into the replica itself?
 
@@ -170,7 +168,7 @@ While we have tight (ie, with negligible spacegap) PoS constructions based on gr
 
 #### What and Why is important for Filecoin
 
-Hash tables are a way to get PoS constructions that have a simpler analysis compared with graph-labelling based constructions. If we can achieve tightness, and at the same time we can solve [[Problem 4]{.ul}][Problem 4: Proof of Useful Space from hash-based PoS], we would have an alternative to Stacked-DRG which has a simple analysis (no need of graph assumptions) and a non-interactive initialization phase.
+Hash tables are a way to get PoS constructions that have a simpler analysis compared with graph-labelling based constructions. If we can achieve tightness, and at the same time we can solve [Problem 4][Problem 4: Proof of Useful Space from hash-based PoS], we would have an alternative to Stacked-DRG which has a simple analysis (no need of graph assumptions) and a non-interactive initialization phase.
 
 ### Problem 7: Incremental Cost for Parameters Upgrades 
 
