@@ -6,7 +6,7 @@
 
 # CryptoNetLab
 
-**Welcome to the CryptoNetLab public repository. Here you will be able to learn about and contribute to our Open Problems, RFPs, and Research Projects, as well as keep tabs on what we're planning for the future.** You can also consult the version on the [Protocol Labs Research website](https://research.protocol.ai/groups/cryptonetlab/)
+**Welcome to the CryptoNetLab public repository. Here you will be able to learn about and contribute to our Open Problems, RFPs, and Research Projects, as well as keep tabs on what we're planning for the future.** You can also follow our work on our [Protocol Labs Research webpage](https://research.protocol.ai/groups/cryptonetlab/) and the [PL Research blog](https://research.protocol.ai/blog/) by [subscribing](https://protocol.us4.list-manage.com/subscribe?MERGE0=&u=09d704b0125b11d44d67d4617&id=7aa0f1150b&subscribe=) to the PL Research newsletter.
 
 ## Table of Contents
 
