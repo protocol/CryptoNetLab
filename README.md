@@ -16,6 +16,7 @@
   - [Open Problems](#research)
   - [Projects](#research)
   - [Collaborations](#collaborations)
+- [Community](#community)
 - [Publications, Talks, & Tutorials](#publications-talks--tutorials)
 - [Team](#team)
 - [Contact](#contact)
@@ -103,8 +104,12 @@ We welcome discussion of our current Open Problems on our [github discussion pag
 ### Collaborations
   
 We are very interested in forming collaborations with researchers and engineers working in our fields of interest, and we offer several grants and research fellowships to support these working relationships. Please check out the [PL Research website](https://research.protocol.ai/outreach/) for further details and application instructions.
+
+## Community
+
+Please join us for discussion an  anything in the CryptoNetLab orbit on our [discussion forum](https://github.com/protocol/CryptoNetLab/discussions/)
   
-### Publications, Talks, & Tutorials
+## Publications, Talks, & Tutorials
 
 You can vew our current slate of publications, talks, and other resources on [our lab webpage](https://research.protocol.ai/groups/cryptonetlab/).
 
