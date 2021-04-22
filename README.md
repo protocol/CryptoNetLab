@@ -13,7 +13,7 @@
 - [The CryptoNetLab](#cryptonetlab)
   - [Mission & Vision](#mission--vision)
 - [Research](#research)
-  - [Areas](#research)
+  - [Open Problems](#research)
   - [Projects](#research)
   - [Collaborations](#collaborations)
 - [Publications, Talks, & Tutorials](#publications-talks--tutorials)
@@ -41,8 +41,7 @@ CryptoNetlab’s current foci are:
 
  Much of CryptoNetLab’s past work is exhibited in the Filecoin Research [website](https://research.filecoin.io/) and [GitHub repo](https://github.com/filecoin-project/research/).
 
-### Areas
-
+### Open Problems
 <table>
   <thead>
     <tr>
@@ -57,63 +56,53 @@ CryptoNetlab’s current foci are:
       <td rowspan="8">Proof of Space</td>
       <td> Simple graph-labeling based PoS in the time model</td>
       <td>description 1</td>
-         
-    </tr><tr>
+ </tr><tr>
       <td> Graph-labeling based PoS in the cost model</td>
       <td>description 2</td>
-    
-    </tr><tr>
+</tr><tr>
       <td>Less communication rounds for repeated audits</td>
       <td>description 3</td>
-      
-    </tr><tr>
+</tr><tr>
       <td>Proof of Useful Space from hash-based PoS</td>
       <td>description 4</td>
-      
-    </tr><tr>
+</tr><tr>
       <td>Proof of Useful Space with Data Updatability</td>
       <td>description 5</td>
-      
-    </tr><tr>
+ </tr><tr>
       <td>Tight hash-table based PoS construction</td>
       <td>description 6</td>
-      
-    </tr><tr>
+  </tr><tr>
       <td>Incremental Cost for Parameter Upgrades</td>
       <td>description 7</td>
-      
-    </tr><tr>
+  </tr><tr>
       <td>Verifiable Capacity Bound Functions</td>
       <td>description 8</td>
-    
-<tr>
+  <tr>
       <td rowspan="3">Area 2</td>
       <td>open problem 1</td>
       <td>description 1</td>
-     
-      
-    </tr><tr>
+  </tr><tr>
       <td>open problem 2</td>
       <td>description 2</td>
-    
-    </tr><tr>
+  </tr><tr>
       <td>open problem 3</td>
       <td>description 3</td>
     </tr>
   </tbody>
 </table>
 
-  ### Projects
+
+### Projects
   
-  ### RFPs
+### RFPs
   
-  ### Collaborations
+### Collaborations
   
 We are very interested in forming collaborations with researchers and engineers working in our fields of interest, and we offer several grants and research fellowships to support these working relationships.
   
 ### Publications, Talks, & Tutorials
 
-### Team
+## Team
 
 > -   [Nicola Greco](https://research.protocol.ai/authors/nicola-greco)
 > -   [Irene Giacomelli](https://research.protocol.ai/authors/irene-giacomelli)
@@ -122,6 +111,6 @@ We are very interested in forming collaborations with researchers and engineers 
 > -   [Sarah Azouvi](https://research.protocol.ai/authors/sarah-azouvi)
 > -   [Nicolas Gailly](https://research.protocol.ai/authors/nicolas-gailly)
 
-### Contact
+## Contact
 
 You can reach out to us anytime with your question and interest in these projects by emailing [resnetlab@protocol.ai](mailto:resnetlab@protocol.ai)
