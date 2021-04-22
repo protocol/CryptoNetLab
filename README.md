@@ -42,6 +42,9 @@ CryptoNetlab’s current foci are:
  Much of CryptoNetLab’s past work is exhibited in the Filecoin Research [website](https://research.filecoin.io/) and [GitHub repo](https://github.com/filecoin-project/research/).
 
 ### Open Problems
+
+We welcome discussion of our current Open Problems on our [github discussion page](https://github.com/protocol/CryptoNetLab/discussions/categories/open-problems-ideas-proposals). Please join us in exploring the future of public good cryptography by contributing to the solution of current problems and posing new ones! 
+
 <table>
   <thead>
     <tr>
