@@ -119,4 +119,4 @@ You can vew our current slate of publications, talks, and other resources on [ou
 
 ## Contact
 
-You can reach out to us anytime with your question and interest in these projects by emailing [resnetlab@protocol.ai](mailto:resnetlab@protocol.ai)
+You can reach out to us anytime with your question and interest in these projects by emailing [research@protocol.ai](mailto:research@protocol.ai)
