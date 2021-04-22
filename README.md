@@ -44,7 +44,7 @@ CryptoNetlab’s current foci are:
 
 ### Open Problems
 
-We welcome discussion of our current Open Problems on our [github discussion page](https://github.com/protocol/CryptoNetLab/discussions/categories/open-problems-ideas-proposals). Please join us in exploring the future of public good cryptography by contributing to the solution of current problems and posing new ones! 
+We welcome discussion of our [current Open Problems](https://github.com/protocol/CryptoNetLab/tree/main/open_problems) on our [github discussion page](https://github.com/protocol/CryptoNetLab/discussions/categories/open-problems-ideas-proposals). Please join us in exploring the future of public good cryptography by contributing to the solution of current problems and posing new ones! 
 
 <table>
   <thead>
