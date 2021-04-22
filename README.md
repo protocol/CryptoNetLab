@@ -44,31 +44,65 @@ CryptoNetlab’s current foci are:
 ### Areas
 
 <table>
-  <tr>
-    <th><b>Research Area</b></th>
+  <thead>
+    <tr>
+      <th><b>Research Area</b></th>
     <th><b>Open Problem(s)</b></th>
     <th><b>Short Description</b></th>
-  </tr>
-   <tr>
-    <th><b>Research Area One</b></th>
-    <th>Open Problem</th>
-    <th></th>
-  </tr>
+    </tr>
+  </thead>
 
-  <tr>
-    <th><b>Research Area Two</b></th>
-    <th>Open Problem</th>
-    <th></th>
-  </tr>
-  
-  <tr>
-    <th><b>Research Area Three</b></th>
-    <th>Open Problem</th>
-    <th></th>
-  </tr>
- 
-  </table>
-  
+  <tbody>
+    <tr>
+      <td rowspan="8">Proof of Space</td>
+      <td> Simple graph-labeling based PoS in the time model</td>
+      <td>description 1</td>
+         
+    </tr><tr>
+      <td> Graph-labeling based PoS in the cost model</td>
+      <td>description 2</td>
+    
+    </tr><tr>
+      <td>Less communication rounds for repeated audits</td>
+      <td>description 3</td>
+      
+    </tr><tr>
+      <td>Proof of Useful Space from hash-based PoS</td>
+      <td>description 4</td>
+      
+    </tr><tr>
+      <td>Proof of Useful Space with Data Updatability</td>
+      <td>description 5</td>
+      
+    </tr><tr>
+      <td>Tight hash-table based PoS construction</td>
+      <td>description 6</td>
+      
+    </tr><tr>
+      <td>Incremental Cost for Parameter Upgrades</td>
+      <td>description 7</td>
+      
+    </tr><tr>
+      <td>Verifiable Capacity Bound Functions</td>
+      <td>description 8</td>
+    
+<tr>
+      <td rowspan="3">Area 2</td>
+      <td>open problem 1</td>
+      <td>description 1</td>
+     
+      
+    </tr><tr>
+      <td>open problem 2</td>
+      <td>description 2</td>
+    
+    </tr><tr>
+      <td>open problem 3</td>
+      <td>description 3</td>
+    </tr>
+  </tbody>
+</table>
+
   ### Projects
   
   ### RFPs
