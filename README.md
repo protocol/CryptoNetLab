@@ -91,16 +91,19 @@ CryptoNetlab’s current foci are:
   </tbody>
 </table>
 
+### Projects 
 
-### Projects
-  
 ### RFPs
+  
+ As we develop and post RFPs, they will be posted in [this github repo](https://github.com/protocol/research-RFPs).
   
 ### Collaborations
   
 We are very interested in forming collaborations with researchers and engineers working in our fields of interest, and we offer several grants and research fellowships to support these working relationships. Please check out the [PL Research website](https://research.protocol.ai/outreach/) for further details and application instructions.
   
 ### Publications, Talks, & Tutorials
+
+You can vew our current slate of publications, talks, and other resources on [our lab webpage](https://research.protocol.ai/groups/cryptonetlab/).
 
 ## Team
 
