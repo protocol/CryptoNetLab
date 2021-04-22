@@ -59,38 +59,30 @@ We welcome discussion of our current Open Problems on our [github discussion pag
     <tr>
       <td rowspan="8">Proof of Space</td>
       <td> Simple graph-labeling based PoS in the time model</td>
-      <td>description 1</td>
- </tr><tr>
+      <td rowspan="8">description 1</td>
+   </tr><tr>
       <td> Graph-labeling based PoS in the cost model</td>
-      <td>description 2</td>
-</tr><tr>
+    </tr><tr>
       <td>Less communication rounds for repeated audits</td>
-      <td>description 3</td>
-</tr><tr>
+     </tr><tr>
       <td>Proof of Useful Space from hash-based PoS</td>
-      <td>description 4</td>
-</tr><tr>
+     </tr><tr>
       <td>Proof of Useful Space with Data Updatability</td>
-      <td>description 5</td>
- </tr><tr>
+    </tr><tr>
       <td>Tight hash-table based PoS construction</td>
-      <td>description 6</td>
-  </tr><tr>
+    </tr><tr>
       <td>Incremental Cost for Parameter Upgrades</td>
-      <td>description 7</td>
-  </tr><tr>
+    </tr><tr>
       <td>Verifiable Capacity Bound Functions</td>
-      <td>description 8</td>
+    </tr>
   <tr>
       <td rowspan="3">Area 2</td>
       <td>open problem 1</td>
-      <td>description 1</td>
-  </tr><tr>
+      <td rowspan="3">description 2</td>
+    </tr><tr>
       <td>open problem 2</td>
-      <td>description 2</td>
-  </tr><tr>
+    </tr><tr>
       <td>open problem 3</td>
-      <td>description 3</td>
     </tr>
   </tbody>
 </table>
