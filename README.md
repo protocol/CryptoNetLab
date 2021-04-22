@@ -98,7 +98,7 @@ CryptoNetlab’s current foci are:
   
 ### Collaborations
   
-We are very interested in forming collaborations with researchers and engineers working in our fields of interest, and we offer several grants and research fellowships to support these working relationships.
+We are very interested in forming collaborations with researchers and engineers working in our fields of interest, and we offer several grants and research fellowships to support these working relationships. Please check out the [PL Research website](https://research.protocol.ai/outreach/) for further details and application instructions.
   
 ### Publications, Talks, & Tutorials
 
