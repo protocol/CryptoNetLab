@@ -80,7 +80,25 @@ We welcome discussion of our [current Open Problems](https://github.com/protocol
       <td></td>
       <td rowspan="3"></td>
     </tr><tr>
-      <td>TBD</td>
+      <td> (to be added soon) </td>
+    </tr><tr>
+      <td></td>
+    </tr> 
+   <tr>
+      <td rowspan="3">Vector Commitments</td>
+      <td></td>
+      <td rowspan="3"></td>
+    </tr><tr>
+      <td> (to be added soon) </td>
+    </tr><tr>
+      <td></td>
+    </tr>  
+     <tr>
+      <td rowspan="3">Consensus</td>
+      <td></td>
+      <td rowspan="3"></td>
+    </tr><tr>
+      <td> (to be added soon) </td>
     </tr><tr>
       <td></td>
     </tr>
