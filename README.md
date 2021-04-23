@@ -51,7 +51,7 @@ We welcome discussion of our [current Open Problems](https://github.com/protocol
     <tr>
       <th><b>Research Area</b></th>
     <th><b>Open Problem(s)</b></th>
-    <th><b>Short Description</b></th>
+    <th><b>Short Description: see [here](https://github.com/protocol/CryptoNetLab/blob/main/open_problems/Proof-of-Space_and_Useful_Space_Open_Problems). </b></th>
     </tr>
   </thead>
 
@@ -76,13 +76,13 @@ We welcome discussion of our [current Open Problems](https://github.com/protocol
       <td>Verifiable Capacity Bound Functions</td>
     </tr>
   <tr>
-      <td rowspan="3">Area 2</td>
-      <td>open problem 1</td>
+      <td rowspan="3">SNARKs</td>
+      <td></td>
       <td rowspan="3">description 2</td>
     </tr><tr>
-      <td>Vector Commitmens</td>
+      <td>V</td>
     </tr><tr>
-      <td>SNARKs</td>
+      <td></td>
     </tr>
   </tbody>
 </table>
