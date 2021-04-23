@@ -80,9 +80,9 @@ We welcome discussion of our [current Open Problems](https://github.com/protocol
       <td>open problem 1</td>
       <td rowspan="3">description 2</td>
     </tr><tr>
-      <td>open problem 2</td>
+      <td>Vector Commitmens</td>
     </tr><tr>
-      <td>open problem 3</td>
+      <td>SNARKs</td>
     </tr>
   </tbody>
 </table>
