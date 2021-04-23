@@ -51,7 +51,7 @@ We welcome discussion of our [current Open Problems](https://github.com/protocol
     <tr>
       <th><b>Research Area</b></th>
     <th><b>Open Problem(s)</b></th>
-    <th><b>Short Description: see [here](https://github.com/protocol/CryptoNetLab/blob/main/open_problems/Proof-of-Space_and_Useful_Space_Open_Problems). </b></th>
+    <th><b>Short Description: </b></th>
     </tr>
   </thead>
 
@@ -59,7 +59,7 @@ We welcome discussion of our [current Open Problems](https://github.com/protocol
     <tr>
       <td rowspan="8">Proof of Space</td>
       <td> Simple graph-labeling based PoS in the time model</td>
-      <td rowspan="8">description 1</td>
+      <td rowspan="8"> See <a href="https://github.com/protocol/CryptoNetLab/blob/main/open_problems/Proof-of-Space_and_Useful_Space_Open_Problems/">here</a> </td>
    </tr><tr>
       <td> Graph-labeling based PoS in the cost model</td>
     </tr><tr>
@@ -78,9 +78,9 @@ We welcome discussion of our [current Open Problems](https://github.com/protocol
   <tr>
       <td rowspan="3">SNARKs</td>
       <td></td>
-      <td rowspan="3">description 2</td>
+      <td rowspan="3"></td>
     </tr><tr>
-      <td>V</td>
+      <td>TBD</td>
     </tr><tr>
       <td></td>
     </tr>
