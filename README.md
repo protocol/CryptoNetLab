@@ -59,7 +59,7 @@ We welcome discussion of our [current Open Problems](https://github.com/protocol
     <tr>
       <td rowspan="8">Proof of Space</td>
       <td> Simple graph-labeling based PoS in the time model</td>
-      <td rowspan="8"> See <a href="https://github.com/protocol/CryptoNetLab/blob/main/open_problems/Proof-of-Space_and_Useful_Space_Open_Problems/">here</a> </td>
+      <td rowspan="8"> See <a href="https://github.com/protocol/CryptoNetLab/blob/main/open_problems/Proof-of-Space_and_Useful_Space_Open_Problems.md">here</a> </td>
    </tr><tr>
       <td> Graph-labeling based PoS in the cost model</td>
     </tr><tr>
