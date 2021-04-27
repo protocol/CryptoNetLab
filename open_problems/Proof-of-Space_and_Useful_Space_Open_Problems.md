@@ -34,7 +34,7 @@ This document contains a list of research questions related to Proof of Space (a
 
 ### Proof of Space
 
-A **Poof of Space** (PoS, see for example: [eprint 2013/796][10]) is a protocol that allows a prover to convince a verifier that he has a minimum specified amount of space (ie, used storage). More precisely in a PoS protocol we have two main sub-protocols:
+A **Proof of Space** (PoS, see for example: [eprint 2013/796][10]) is a protocol that allows a prover to convince a verifier that he has a minimum specified amount of space (ie, used storage). More precisely in a PoS protocol we have two main sub-protocols:
 
 -   *Initialization* (ie, setup phase): on public input N, an *advice* (eg, vector of random data) of size N is created. The advice is stored by the prover, while the verifier does not know the advice (in some protocols, the verifier may know a commitment to the advice).
 
