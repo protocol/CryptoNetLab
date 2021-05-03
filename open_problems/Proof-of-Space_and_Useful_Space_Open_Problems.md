@@ -12,11 +12,11 @@ This document contains a list of research questions related to Proof of Space (a
 
 **[Problems and Directions]**
 
-[Problem 1: Simple graph-labeling based PoS in the time model] 
+[Problem 1: Simple graph-labeling based PoS in the time model.] 
 
-[Problem 2: Graph-labeling based PoS in the cost model] 
+[Problem 2: Graph-labeling based PoS in the cost model.] 
 
-[Problem 3: Less communication rounds for repeated audits] 
+[Problem 3: Less communication rounds for repeated audits.] 
 
 [Problem 4: Proof of Useful Space from hash-based PoS] 
 
