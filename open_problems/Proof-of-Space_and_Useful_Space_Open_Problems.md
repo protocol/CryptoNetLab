@@ -12,11 +12,11 @@ This document contains a list of research questions related to Proof of Space (a
 
 **[Problems and Directions]**
 
-[Problem 1: Simple graph-labeling based PoS in the time model.] 
+[Problem 1: Simple graph-labeling based PoS in the time model] 
 
-[Problem 2: Graph-labeling based PoS in the cost model.] 
+[Problem 2: Graph-labeling based PoS in the cost model] 
 
-[Problem 3: Less communication rounds for repeated audits.] 
+[Problem 3: Less communication rounds for repeated audits] 
 
 [Problem 4: Proof of Useful Space from hash-based PoS] 
 
@@ -66,7 +66,7 @@ Informally, this means that in addition to the space hardness property seen befo
 
 ## Problems and Directions 
 
-### Problem 1: Simple graph-labeling based PoS in the time model.
+### Problem 1: Simple graph-labeling based PoS in the time model
 
 So far we have mainly seen two kinds of PoS constructions, one based on *graph labeling* and the other based on *hash tables*. We know that graph-labeling based constructions can achieve good asymptotic parameters and be secure in the time model: the [Stacked-DRGs][12] construction achieves both these properties. However, it comes with complicated graph-pebbling proofs (this is common to other graph-labeling construction, see [eprint 2013/796][10]), graph assumptions (e.g., security based on best known attacks on a DRG graph) and unsatisfactory practical efficiency (eg, the audit frequency is too high). Can we improve on these aspects?
 
@@ -84,7 +84,7 @@ In general, find a graph that gives smaller hidden constants in the prover and v
 
 Filecoin uses a PoRep that is constructed taking the advice A of a Stacked-DRGs PoS and adding to it the data D (ie, a "*replica"* R is defined as R = D + A, "additive compiler")[^1]. Improving the concrete efficiency or the security assumptions of Stacked-DRGs will overall improve the Filecoin network.
 
-### Problem 2: Graph-labeling based PoS in the cost model.
+### Problem 2: Graph-labeling based PoS in the cost model
 
 We know that construction based on hash-tables can be used in the cost model (eg, [eprint 2016/035][13]).\
 Can a graph-labeling based construction be used in this model? While researching this direction we found out the [Stacked-Expanders][14] PoS, can be used in the cost model. Indeed, adapting the pebbling analysis used for the Stacked-DRG graph for the stacked-expanders graph we are able to count the number of hash calls required to answer an audit challenge when the storage requirement is not fulfilled. Then, assuming a price for each hash call, we can estimate the cost for a malicious prover that deletes more than a fraction of the advice. However, this PoS does not achieve a good enough space-computation tradeoff, we only know that deleting a fraction larger than the spacegap requires a minimum number of hash. Can we design graph-labelling constructions, native in the cost model, with a better tradeoff? Moreover, hash-table construction has the "upgradability property": if the ratio between cost of computation and cost of storage change, the advices already created can be "upgraded" running an algorithm that costs less than re-running the whole initialization with upgraded parameters. Can we design graph-labeling constructions, native in the cost model, with the same property? [See Problem 7.][Problem 7: Incremental Cost for Parameters Upgrades]
@@ -103,7 +103,7 @@ Can a graph-labeling based construction be used in this model? While researching
 
 The cost model is used to argue the security of an important piece of the Filecoin system: the WindowPoSt protocol (ie, periodic repetition of the audit phase of the PoRep based on the Stacked-DRGs PoS described above). Designing a graph-labeling PoS with optimal parameters in the cost model can improve the practical efficiency of WindowPoSt (eg, less frequent check or smaller proof size). Moreover, if the new PoS has a *fast initialization phase*, this will allow faster power on-boarding (ie, the blockchain can grow faster) and shorter retrieval time for the data.
 
-### Problem 3: Less communication rounds for repeated audits.
+### Problem 3: Less communication rounds for repeated audits
 
 Repeating the execution step multiple times needs interaction between Prover and Verifier, since those proving steps need to be spaced out and can not make non-interactive using standard techniques (eg, Fiat-Shamir heuristic). Indeed, if different execution phases are not spaced out, the prover can create all the proofs at the same time, failing in proving persistence of the storage.
 
@@ -201,13 +201,13 @@ Having a tool like VCBFs that can be applied to our proofs as mentioned above ca
   [Proof of Space]: #proof-of-space
   [Filecoin, Useful Space and Replication]: #filecoin-useful-space-and-replication
   [Problems and Directions]: #problems-and-directions
-  [Problem 1: Simple graph-labeling based PoS in the time model.]: #problem-1-simple-graph-labeling-based-pos-in-the-time-model.
+  [Problem 1: Simple graph-labeling based PoS in the time model]: #problem-1-simple-graph-labeling-based-pos-in-the-time-model
   [Directions]: #directions
   [What and Why is important for Filecoin]: #what-and-why-is-important-for-filecoin
-  [Problem 2: Graph-labeling based PoS in the cost model.]: #problem-2-graph-labeling-based-pos-in-the-cost-model.
+  [Problem 2: Graph-labeling based PoS in the cost model]: #problem-2-graph-labeling-based-pos-in-the-cost-model
   [1]: #directions-1
   [2]: #what-and-why-is-important-for-filecoin-1
-  [Problem 3: Less communication rounds for repeated audits.]: #problem-3-less-communication-rounds-for-repeated-audits.
+  [Problem 3: Less communication rounds for repeated audits]: #problem-3-less-communication-rounds-for-repeated-audits
   [3]: #directions-2
   [4]: #what-and-why-is-important-for-filecoin-2
   [Problem 4: Proof of Useful Space from hash-based PoS]: #problem-4-proof-of-useful-space-from-hash-based-pos
