@@ -201,13 +201,13 @@ Having a tool like VCBFs that can be applied to our proofs as mentioned above ca
   [Proof of Space]: #proof-of-space
   [Filecoin, Useful Space and Replication]: #filecoin-useful-space-and-replication
   [Problems and Directions]: #problems-and-directions
-  [Problem 1: Simple graph-labeling based PoS in the time model.]: #problem-1-simple-graph-labeling-based-pos-in-the-time-model
+  [Problem 1: Simple graph-labeling based PoS in the time model.]: #problem-1-simple-graph-labeling-based-pos-in-the-time-model.
   [Directions]: #directions
   [What and Why is important for Filecoin]: #what-and-why-is-important-for-filecoin
-  [Problem 2: Graph-labeling based PoS in the cost model.]: #problem-2-graph-labeling-based-pos-in-the-cost-model
+  [Problem 2: Graph-labeling based PoS in the cost model.]: #problem-2-graph-labeling-based-pos-in-the-cost-model.
   [1]: #directions-1
   [2]: #what-and-why-is-important-for-filecoin-1
-  [Problem 3: Less communication rounds for repeated audits.]: #problem-3-less-communication-rounds-for-repeated-audits
+  [Problem 3: Less communication rounds for repeated audits.]: #problem-3-less-communication-rounds-for-repeated-audits.
   [3]: #directions-2
   [4]: #what-and-why-is-important-for-filecoin-2
   [Problem 4: Proof of Useful Space from hash-based PoS]: #problem-4-proof-of-useful-space-from-hash-based-pos
