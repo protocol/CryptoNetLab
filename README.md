@@ -135,3 +135,7 @@ You can vew our current slate of publications, talks, and other resources on [ou
 ## Contact
 
 You can reach out to us anytime with your question and interest in these projects by emailing [research@protocol.ai](mailto:research@protocol.ai)
+
+## License
+
+Dual-licensed under [MIT](https://github.com/protocol/CryptoNetLab/blob/main/LICENSE-MIT.md) + [Apache 2.0.](https://github.com/protocol/CryptoNetLab/blob/main/LICENSE-APACHE.md)
