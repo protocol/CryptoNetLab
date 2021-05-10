@@ -1,0 +1,111 @@
+---
+# Towards Better Vector Commitments - Open Problems
+---
+
+This is a list of research questions in the area of Vector Commitments and their applications to Proof of Space (and useful space) in the Filecoin protocol.
+
+**[Terminology]**
+
+[Vector Commitments] 
+
+[Proof of Space in Filecoin] 
+
+**[Problems and Directions]**
+
+[Problem 1:  ] 
+
+[Problem 2:  ] 
+
+[Problem 3:  ] 
+
+
+## Terminology 
+
+### Vector Commitments
+
+A **Vector commitment** (VC) (first defined by (Catalano and Fiore)[https://eprint.iacr.org/2011/495.pdf] allow to commit to a sequence of values and 
+later on reveal one or many values at a specific position and prove it consistent with the initial commitment.
+Vector commitments are used to trade off storage (all values in a vector vs. one commitment) for bandwidth (taken up to reveal values and prove them). 
+This means that the commitment and the proofs of opening should have a reduced size.
+
+Vector Commitments can be equipped with further important features as follows:
+
+
+-   *Subvector Openings* (SVC) This allows to open a committed vector at a set of positions with an opening of size independent of both the vector’s 
+length and the number of opened positions.
+-   *Updatability*  This allows to compute a new commitment C' to a vector that updates one position of the initially commited vector *m* to a 
+different value. The computation of such C' can be performed without knowing the entire vector and more efficiently than recomputing the commitment
+from scratch. Moreover, an updatable VC must also provide a method to update an opening for position i that is valid for a commitment C into a new 
+opening for the same position that is valid for the updated commitment C' by only knowing the portion of the vector that is supposed to change and 
+in time faster than recomputing the opening from scratch.
+    - *Key-Updatability* Usually, updating commitments and openings requires some auxiliary information related to the positions that are changed.
+    We will call this static auxiliary information the *update key*. Some schemes do not require at all update keys, we will consider them  keyless updatable.
+    - *Hint-updatability* A weaker variant of the update need an opening for the position in which the vector update occurs.  
+ 
+-  *Aggregation*  In an SVC, aggregation models the ability of computing an opening for a set of positions I and J starting from 
+two openings and sets of positions I and J, respectively. 
+    - *One-Hop Aggregation* Aggregation is said to be one-hop if one can aggregate only once, or alternatively if it is not possible to aggregate openings
+    obtained through the aggregate algorithm.
+    - *Incremental Aggregation* Aggregation is said to be incremental if it can be performed an unbounded number of times, and if one can also disaggregate
+    any opening, i.e., from an opening for I one can compute an opening for any subset K of I.
+    - *Cross-Commitment Aggregation* This notion allows to compute a succinct proof of opening for a set of positions from different vectors committed separately. 
+ 
+
+### Arguments of Knowledge of Subvector Opening 
+
+Arguments of Knowledge (AoK) for a Vector Commitment scheme comes in different flavours: 
+  - *Classic AoK:* It proves knowledge of the subvector that opens a commitment at a public set of positions. 
+  - *Extension of AoK:*  It can be used to prove that two commitments share a common subvector. 
+  - *Commit Version of AoK:*  This is like the classic one, except that the subvector one proves knowledge of is also committed: 
+   one can create a short proof that C' is a commitment to a subvector of the vector committed in C. 
+ 
+
+### Applications to Proof of Space
+
+Vector Commitments are essential in apllications to Proof of Space (Proof of Storage). 
+Combined with Arguments of Knowledge of Subvector Opening (AoK) with constant-size proofs, the Vector Commitment scheme can lead to an 
+efficient construction of Proof of Space for decentralized usages. 
+
+#### Proof of Space (PoS) protocols allow a client to verify that a server is storing intactly a file via a short communication challenge-response protocol. 
+More precisely, in a PoS protocol we have two main steps:
+ - Initialization (Setup phase): on public input N, an advice A (eg, vector of random data) of size N is created and committed to.  
+ The advice is stored by the prover, while the verifier knows only a commitment to the advice. 
+ - Execution (Audit phase): the verifier and the prover run a protocol and the verifier outputs reject/accept.  
+ Accept means that the verifier is convinced that the prover stores the advice. This phase can be repeated many times. 
+
+ We require that the verifier is highly efficient in both phases, whereas 
+ the prover is highly efficient in the execution phase providing it is honest and had stored and has random access to the data.
+ 
+
+A PoS is sound if a verifier interacting with a malicious prover who stores a fraction of the advice that has size  N' < N,
+and runs in at most $T$ steps during the execution phase, outputs accept with small probability (i.e., soundness error). 
+
+
+*Keyless Proof of Space.* A PoS is said to be keyless if no secret key is needed by clients, a property useful in open systems where the 
+client is a set of distrustful parties (e.g., verifiers in a blockchain) and the server may even be one of these clients. 
+A classical keyless PoS is based on Merkle trees and random spot-checks, recently generalized to work with vector commitments.
+A drawback of this construction is that proofs grow with the number of spot checks (and the size of the tree) and become undesirably large in 
+some applications, e.g., if needed to be stored in a blockchain.  
+
+*Filecoin System.*
+As an illustrative application for a PoS, Filecoin system uses PoS to commit to an advice vector *A*.
+Moreover, in Filecoin it is necessary to prove useful space, i.e. storage space that can be used to keep real-world data.  
+ Proof of Replication (PoRep): When the vector to be committed encodes some real data *D*, we replace the advice with a “replica” vector *R* 
+ defined as *R* = *D* + *A*.   
+   
+## Problems and Directions 
+
+### Problem 1:  
+
+   
+#### Directions
+
+
+
+### Problem 2: 
+
+
+  [Terminology]: #terminology
+  [Vector Commitments]: #vc
+  [Applications to Proof of Space]: #PoS
+  [Problems and Directions]: #problems-and-directions
