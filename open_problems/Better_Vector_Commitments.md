@@ -15,7 +15,7 @@ This is a list of research questions in the area of Vector Commitments and their
 
 **[Problems and Directions]**
 
-[Problem 1:  *Augmented Updatability and Aggregation for SVC*]() 
+[Problem 1:  *Augmented Updatability and Aggregation for SVC*](#problem-one) 
 
 [Problem 2:  *Functional Vector Commitments*]() 
 
@@ -106,7 +106,7 @@ Moreover, in Filecoin it is necessary to prove useful space, i.e. storage space 
    
 ## Problems and Directions ##
 
-### Problem 1:  *Augmented Updatability and Aggregation for SVC* ###
+### Problem 1:  Augmented Updatability and Aggregation for SVC {#problem-one}
 
 In an SVC, the notion of Cross-CommitmentAggregation allows to compute a succinct proof of opening for a set of positions from different vectors
 committed separately.
