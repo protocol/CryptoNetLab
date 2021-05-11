@@ -121,7 +121,7 @@ Some directions can be explored to improve existing constructions and understand
  The  known pairing-based schemes  with  cross-commitment aggregation  rely  on  long  public  parameters.  
  They  require  public  parameters  of  size  linear  in  thesize  of  the  committed  vector.  
  The  trusted  setups  for  these  schemes  seem  to  be  compatible  withsome ceremonies performed in practice for pairing-based SNARKs like Groth16 
- (e.g. ”powers of tau”ceremonies from Zcash or from Filecoin). 
+ (e.g. ”powers of tau” ceremonies from Zcash or from Filecoin). 
  Reducing the size of these parameters or their dependency on the length of vectors to be committed, possibly by means of aggregation 
  (not only for openings, butalso for commitments) is a interesting direction to explore in order to improve the storage-bandwidth trade-off.
  
