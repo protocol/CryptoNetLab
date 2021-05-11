@@ -6,11 +6,11 @@ This is a list of research questions in the area of Vector Commitments and their
 
 **[Terminology]**
 
-[Definitions for Vector Commitments]
+[Definitions for Vector Commitments](#vc)
 
-[Arguments of Knowledge of Subvector Opening]
+[Arguments of Knowledge of Subvector Opening](#AoK)
 
-[Applications to Proof of Space]
+[Applications to Proof of Space](#PoS)
 
 
 **[Problems and Directions]**
@@ -31,9 +31,9 @@ This is a list of research questions in the area of Vector Commitments and their
 
 ## Terminology 
 
-### Definitions for Vector Commitments
+### Definitions for Vector Commitments  
 
-A **Vector commitment** (VC) first defined by (Catalano and Fiore)[https://eprint.iacr.org/2011/495.pdf] allow to commit to a sequence of values and 
+A **Vector commitment** (VC) first defined by [Catalano and Fiore](https://eprint.iacr.org/2011/495.pdf) allow to commit to a sequence of values and 
 later on reveal one or many values at a specific position and prove it consistent with the initial commitment.
 Vector commitments are used to trade off storage (all values in a vector vs. one commitment) for bandwidth (taken up to reveal values and prove them). 
 This means that the commitment and the proofs of opening should have a reduced size.
@@ -217,5 +217,6 @@ Such a scheme may be appealing for efficiency purposes since unknown order group
 
   [Terminology]: #terminology
   [Definitions for Vector Commitments]: #vc
+  [Arguments of Knowledge of Subvector Opening]: #AoK 
   [Applications to Proof of Space]: #PoS
   [Problems and Directions]: #problems-and-directions
