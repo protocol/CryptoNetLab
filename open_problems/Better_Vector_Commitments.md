@@ -15,11 +15,11 @@ This is a list of research questions in the area of Vector Commitments and their
 
 **[Problems and Directions]**
 
-[Problem 1:  *Augmented Updatability and Aggregation for SVC*](#p1) 
+[Problem 1: Augmented Aggregation for SVC](#problem-1-augmented-aggregation-for-svc) 
 
-[Problem 2:  *Functional Vector Commitments*]() 
+[Problem 2: Functional Vector Commitments](#problem-2-functional-vector-commitments) 
 
-[Problem 3:  *Improving Merkle Trees Openings*]() 
+[Problem 3:  Improving Merkle Trees Openings](#problem-3-improving-merkle-tree-openings) 
 
 [Problem 4:  *Updatability Property for SVC*]()
 
@@ -70,7 +70,7 @@ Arguments of Knowledge (AoK) for a Vector Commitment scheme comes in different f
    one can create a short proof that C' is a commitment to a subvector of the vector committed in C. 
  
 
-### Applications to Proof of Space ###
+### Applications to Proof of Space 
 
 Vector Commitments are essential in apllications to Proof of Space (Proof of Storage). 
 Combined with Arguments of Knowledge of Subvector Opening (AoK) with constant-size proofs, the Vector Commitment scheme can lead to an 
@@ -106,23 +106,18 @@ Moreover, in Filecoin it is necessary to prove useful space, i.e. storage space 
    
 # Problems and Directions 
 
-## Problem 1:  Augmented Updatability and Aggregation for SVC {#p1}
+## Problem 1: Augmented Aggregation for SVC  
 
-In an SVC, the notion of Cross-CommitmentAggregation allows to compute a succinct proof of opening for a set of positions from different vectors
-committed separately.
-Moreover,  aggregation  models  the  ability  of  computing  an  opening  for  a  set  of  positions I and J starting from two openings for sets of positions
-I and J respectively.
-Seems that achieving both these properties for SVC is not a trivial task, and there are some limitations
-when  considering  strong  requirements  all  together.    
+In an SVC, the notion of aggregation  models  the  ability  of  computing  an  opening  for  a  set  of  positions I and J starting from two openings for sets of positions I and J respectively.
+
+Moreover, Cross-Commitment Aggregation allows to compute a succinct proof of opening for a set of positions from different vectors
+committed separately.    
+
+Some directions can be explored to improve existing constructions and understand the limits of achieving stronger notions of aggregation.
 
 ### Directions:
- - Better Understand Updatability and Aggregation:
-  Seems that updatability is actually a more nuanced notion when considered in presence of aggregation: for example, not all VCs support updating 
-  aggregated proofs. Same holds for updatability of cross-aggregated proofs. 
-  Getting more insights about the relation between Aggregation and Updatability might be meaningful as a first step to 
-  understand the limits of combining such properties and improve existing constructions 
   
- - Reduce  the  Size  of  Public  Parameters: 
+ - Reduce the Size of Public Parameters: 
  The  known pairing-based schemes  with  cross-commitment aggregation  rely  on  long  public  parameters.  
  They  require  public  parameters  of  size  linear  in  thesize  of  the  committed  vector.  
  The  trusted  setups  for  these  schemes  seem  to  be  compatible  withsome ceremonies performed in practice for pairing-based SNARKs like Groth16 
@@ -131,16 +126,15 @@ when  considering  strong  requirements  all  together.
  (not only for openings, butalso for commitments) is a interesting direction to explore in order to improve the storage-bandwidth trade-off.
  
  - Aggregation for Commitments and Openings:
- The RSA-based Key VC scheme from Tomescu et al. ([TXN20])[https://eprint.iacr.org/2020/1239] requires
+ The RSA-based Key VC scheme from Tomescu et al. [[TXN20]](https://eprint.iacr.org/2020/1239) requires
  only constant-sized parameters and it achieves cross-commitments incremental aggregation for openings. 
  The drawback of these aggregation methods is that they still require the verifier to keep multiple
  commitment values around. We are interested to look at different ways to achieve more compact commitments or aggregation among commitments, 
  not only for openings. The commitments aggregation should still allow for opening positions of the committed vectors given the aggregations.
  Would be valuable to also understand what are the challenges, impossibilities or lower bounds in such a scenario.
  
- 
 
-## Problem 2: *Functional Vector Commitments* {#p2}
+## Problem 2: Functional Vector Commitments  
 The only constructions of Functional VCs known today are for openings to linear functions, where messages are vectors and commitments can later 
 be opened to a specific  linear  function of  the  vector  coordinates.  
 We  would  like  to  extend  this property to broader classes of functions. 
@@ -159,7 +153,7 @@ Some key requirements for such a scheme are:
     - proving time should be sub-linear in the vector size
   
 
-## Problem 3: *Improving Merkle Trees Openings* {#p3}
+## Problem 3: Improving Merkle Trees Openings 
  The current PoS uses Merkle trees where k independent openings are aggregated via a general-purpose SNARK, using a SNARK-friendly collision-resistant 
  hash for the Merkle tree (Poseidon hash function). One interesting research direction is to optimize a SNARK for this
  particular type of problem. 
@@ -184,19 +178,27 @@ Algebraic hashes like Poseidon, to some extend, are more efficient in such a set
 When opening Merkle tree commitments we can avoid the logarithmic overhead by either storing some levels of the tree, 
 or portions of the path from leaves to the root. Finding the best trade-off in such scenarios is important for PoS applications. 
 
-## Problem 4: *Updatability Property for SVC* {#p4}
-While we know a few SVC schemes that have constant-size parameters, none of them is updatable but they are only hint-updatable.
-Hint-updatability essentially requires more interaction to perform an update as a user should first obtain an opening for the position that changes, 
-before performing its update locally.
-The lattice-based construction from [[PSTY13]](https://www.iacr.org/archive/eurocrypt2013/78810351/78810351.pdf) has a strong updatability property, 
-not requiring  any type  of  key, while it does not support neither subvector openings, nor any form of aggregation. 
-Overcoming these limitations for known schemes is a further step to achieve better VC.
+## Problem 4: Updatability Property for SVC 
+Updatability it is an essential notion for SVC. It comes in different degrees: hint-updatability that use dynamic keys to make the updates, key-updatability with static keys or keyless updatability. 
+Hint-updatability essentially requires more interaction to perform an update as a one should first obtain an opening for the position to be changed, before performing the update. 
 
-## Problem 5: *Cross Incremental Aggregation and Keyless-Updatability* {#p5}
+### Directions: 
+ - Better Understand Updatability and Aggregation: We aim on constructing VCs with more flexible updatability properties in combination with other interesting features like aggregation. 
+  Seems that updatability is actually a more nuanced notion when considered in presence of aggregation: for example, not all VCs support updating 
+  aggregated proofs. Same holds for updatability of cross-aggregated proofs. 
+  Getting more insights about the relation between Aggregation and Updatability might be meaningful as a first step to 
+  understand the limits of combining such properties and improve existing constructions.
+  
+- Cross Incremental Aggregation and Keyless-Updatability: 
 Seems that building VC with keyless-updatability and cross-commitment incremental  aggregationis still an open problem.  
 No scheme with constant-size public parameters that achieves these two properties simultaneously is known to date. 
+
+- Lattice-Based SVC with Updatability: The lattice-based construction from [[PSTY13]](https://www.iacr.org/archive/eurocrypt2013/78810351/78810351.pdf) 
+has a strong updatability property, not requiring any type of key, while it does not support neither subvector openings, nor any form of aggregation. 
+Overcoming these limitations for known schemes is a further step to achieve better VC.
+
   
-## Problem 6: *Assumptions and Algebraic Settings for VC* {#p6}
+## Problem 5: Assumptions and Algebraic Settings for VC 
 
    - Lattice Assumptions: There is little work done to construct VCs based on lattice assumptions.  
     Papamanthou et al. instantiate a homomorphic Merkle tree construction using Ajtai's hash function to obtain a lattice-based VC 
@@ -209,11 +211,10 @@ No scheme with constant-size public parameters that achieves these two propertie
      like CDH in groups without pairings.
      Bulletproofs is an example of such VC scheme with logarithmic-size openings. 
      The challenge is to obtain concise VCs with preferable constant size openings from DLog assumptions. 
-      
-## Problem 7: *Incrementally Aggregatable SVC from Prime Order Groups* {#p7}
-Almost all known constructions for SVC are based on bilinear groups or group of unknown order. 
-Would be interesting to explore constructing such schemes from discrete log assumptions in prime order groups. 
-Such a scheme may be appealing for efficiency purposes since unknown order groups are typically less efficient than prime order groups.
+   - Incrementally aggregatable SVC from prime order groups: Almost all known constructions for SVC are based on bilinear groups or group of unknown order. 
+    Would be interesting to explore constructing such schemes from discrete log assumptions in prime order groups. 
+    Such a scheme may be appealing for efficiency purposes since unknown order groups are typically less efficient than prime order groups.
+       
 
   [Terminology]: #terminology
   [Definitions for Vector Commitments]: #vc
