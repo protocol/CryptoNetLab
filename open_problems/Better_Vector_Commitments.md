@@ -8,7 +8,7 @@ This is a list of research questions in the area of Vector Commitments and their
 
 [Vector Commitments] 
 
-[Proof of Space in Filecoin] 
+[Applications to Proof of Space] 
 
 **[Problems and Directions]**
 
