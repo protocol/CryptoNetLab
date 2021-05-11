@@ -85,14 +85,18 @@ We welcome discussion of our [current Open Problems](https://github.com/protocol
       <td></td>
     </tr> 
    <tr>
-      <td rowspan="3">Vector Commitments</td>
-      <td></td>
-      <td rowspan="3"></td>
+      <td rowspan="5">Vector Commitments</td>
+     <td> Augmented Aggregation for SVC</td>
+      <td rowspan="5"> See <a href="https://github.com/protocol/CryptoNetLab/blob/main/open_problems/Better_Vector_Commitments.md">here</a> </td>
+   </tr><tr>
+      <td> Functional Vector Commitments</td>
     </tr><tr>
-      <td> (to be added soon) </td>
+      <td> Improving Merkle Tree Openings</td>
     </tr><tr>
-      <td></td>
-    </tr>  
+      <td> Updatability Property for SVC</td>
+    </tr><tr>
+      <td> Assumptions and Algebraic Settings for VC</td>
+    </tr> 
      <tr>
       <td rowspan="3">Consensus</td>
       <td></td>
