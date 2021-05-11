@@ -30,7 +30,7 @@ This is a list of research questions in the area of Vector Commitments and their
 
 ### Vector Commitments
 
-A **Vector commitment** (VC) (first defined by (Catalano and Fiore)[https://eprint.iacr.org/2011/495.pdf] allow to commit to a sequence of values and 
+A **Vector commitment** (VC) first defined by (Catalano and Fiore)[https://eprint.iacr.org/2011/495.pdf] allow to commit to a sequence of values and 
 later on reveal one or many values at a specific position and prove it consistent with the initial commitment.
 Vector commitments are used to trade off storage (all values in a vector vs. one commitment) for bandwidth (taken up to reveal values and prove them). 
 This means that the commitment and the proofs of opening should have a reduced size.
@@ -194,17 +194,17 @@ No scheme with constant-size public parameters that achieves these two propertie
   
 ##Problem 6: *Assumptions and Algebraic Settings for VC* 
 
-    - Lattice Assumptions: There is little work done to construct VCs based on lattice assumptions.  
+   - Lattice Assumptions: There is little work done to construct VCs based on lattice assumptions.  
     Papamanthou et al. instantiate a homomorphic Merkle tree construction using Ajtai's hash function to obtain a lattice-based VC 
-    scheme but this has still logarithmic-size openings. 
-    A more challenging problem is finding a lattice-based scheme with constant-size openings. 
+    scheme but this has still logarithmic-size openings. A more challenging problem is finding a lattice-based scheme with constant-size openings. 
     A possible approach is to start from understanding the existing lattice-based accumulators with constant-sized proofs. 
     Turning them into a strongly-binding vector commitment would probably require 
     some extra challenging work.
-    - DLog Groups for VC: All existing concise VC schemes are based either on groups of unknown order or on bilinear groups.
-     It is thus an open question to find a VC that can be based on the discrete-logarithm assumption or a related one, like CDH in groups without pairings.
-      Bulletproofs is an example of such VC scheme with logarithmic-size openings. 
-      The challenge is to obtain concise VCs with preferable constant size openings from DLog assumptions. 
+   - DLog Groups for VC: All existing concise VC schemes are based either on groups of unknown order or on bilinear groups.
+     It is thus an open question to find a VC that can be based on the discrete-logarithm assumption or a related one, 
+     like CDH in groups without pairings.
+     Bulletproofs is an example of such VC scheme with logarithmic-size openings. 
+     The challenge is to obtain concise VCs with preferable constant size openings from DLog assumptions. 
       
 ##Problem 7: *Incrementally Aggregatable SVC from Prime Order Groups* 
 Almost all known constructions for SVC are based on bilinear groups or group of unknown order. 
