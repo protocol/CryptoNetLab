@@ -8,7 +8,10 @@ This is a list of research questions in the area of Vector Commitments and their
 
 [Definitions for Vector Commitments]
 
+[Arguments of Knowledge of Subvector Opening]
+
 [Applications to Proof of Space]
+
 
 **[Problems and Directions]**
 
