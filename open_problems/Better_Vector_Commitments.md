@@ -19,15 +19,11 @@ This is a list of research questions in the area of Vector Commitments and their
 
 [Problem 2: Functional Vector Commitments](#problem-2-functional-vector-commitments) 
 
-[Problem 3:  Improving Merkle Trees Openings](#problem-3-improving-merkle-tree-openings) 
+[Problem 3:  Improving Merkle Tree Openings](#problem-3-improving-merkle-tree-openings) 
 
-[Problem 4:  *Updatability Property for SVC*]()
+[Problem 4:  Updatability Property for SVC](#problem-4-updatability-property-for-svc)
 
-[Problem 5:  *Cross Incremental Aggregation and Keyless-Updatability*]()
-
-[Problem 6:  *Assumptions and Algebraic Settings for VC*](#p6)
-
-[Problem 7:  *Incrementally aggregatable SVC from prime order groups*]()
+[Problem 5: Assumptions and Algebraic Settings for VC](#problem-5-assumptions-and-algebraic-settings-for-vc)
 
 ## Terminology 
 
@@ -153,7 +149,7 @@ Some key requirements for such a scheme are:
     - proving time should be sub-linear in the vector size
   
 
-## Problem 3: Improving Merkle Trees Openings 
+## Problem 3: Improving Merkle Tree Openings 
  The current PoS uses Merkle trees where k independent openings are aggregated via a general-purpose SNARK, using a SNARK-friendly collision-resistant 
  hash for the Merkle tree (Poseidon hash function). One interesting research direction is to optimize a SNARK for this
  particular type of problem. 
