@@ -6,29 +6,29 @@ This is a list of research questions in the area of Vector Commitments and their
 
 **[Terminology]**
 
-[Vector Commitments] 
+[Definitions for Vector Commitments]
 
-[Applications to Proof of Space] 
+[Applications to Proof of Space]
 
 **[Problems and Directions]**
 
-[Problem 1:  Augmented Updatability and Aggregation for SVC] 
+[Problem 1:  *Augmented Updatability and Aggregation for SVC*] 
 
-[Problem 2:  Functional Vector Commitments] 
+[Problem 2:  *Functional Vector Commitments*] 
 
-[Problem 3:  Improving Merkle Trees Openings] 
+[Problem 3:  *Improving Merkle Trees Openings*] 
 
-[Problem 4:  Updatability Property for SVC] 
+[Problem 4:  *Updatability Property for SVC*] 
 
-[Problem 5:  Cross Incremental Aggregation and Keyless-Updatability]
+[Problem 5:  *Cross Incremental Aggregation and Keyless-Updatability*]
 
-[Problem 6:  Assumptions and Algebraic Settings for VC]
+[Problem 6:  *Assumptions and Algebraic Settings for VC*]
 
-[Problem 7:  Incrementally aggregatable SVC from prime order groups]
+[Problem 7:  *Incrementally aggregatable SVC from prime order groups*]
 
 ## Terminology 
 
-### Vector Commitments
+### Definitions for Vector Commitments
 
 A **Vector commitment** (VC) first defined by (Catalano and Fiore)[https://eprint.iacr.org/2011/495.pdf] allow to commit to a sequence of values and 
 later on reveal one or many values at a specific position and prove it consistent with the initial commitment.
@@ -73,7 +73,8 @@ Vector Commitments are essential in apllications to Proof of Space (Proof of Sto
 Combined with Arguments of Knowledge of Subvector Opening (AoK) with constant-size proofs, the Vector Commitment scheme can lead to an 
 efficient construction of Proof of Space for decentralized usages. 
 
-#### Proof of Space (PoS) protocols allow a client to verify that a server is storing intactly a file via a short communication challenge-response protocol. 
+#### Proof of Space (PoS)
+PoS protocols allow a client to verify that a server is storing intactly a file via a short communication challenge-response protocol. 
 More precisely, in a PoS protocol we have two main steps:
  - Initialization (Setup phase): on public input N, an advice A (eg, vector of random data) of size N is created and committed to.  
  The advice is stored by the prover, while the verifier knows only a commitment to the advice. 
@@ -85,7 +86,7 @@ More precisely, in a PoS protocol we have two main steps:
  
 
 A PoS is sound if a verifier interacting with a malicious prover who stores a fraction of the advice that has size  N' < N,
-and runs in at most $T$ steps during the execution phase, outputs accept with small probability (i.e., soundness error). 
+and runs in at most T steps during the execution phase, outputs accept with small probability (i.e., the soundness error). 
 
 
 *Keyless Proof of Space.* A PoS is said to be keyless if no secret key is needed by clients, a property useful in open systems where the 
@@ -212,6 +213,6 @@ Would be interesting to explore constructing such schemes from discrete log assu
 Such a scheme may be appealing for efficiency purposes since unknown order groups are typically less efficient than prime order groups.
 
   [Terminology]: #terminology
-  [Vector Commitments]: #vc
+  [Definitions for Vector Commitments]: #vc
   [Applications to Proof of Space]: #PoS
   [Problems and Directions]: #problems-and-directions
