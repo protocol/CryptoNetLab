@@ -25,7 +25,7 @@ This is a list of research questions in the area of Vector Commitments and their
 
 [Problem 5: Assumptions and Algebraic Settings for VC](#problem-5-assumptions-and-algebraic-settings-for-vc)
 
-## Backgroun
+## Background
 
 ### Definitions  
 
