@@ -6,32 +6,32 @@ This is a list of research questions in the area of Vector Commitments and their
 
 **[Terminology]**
 
-[Definitions for Vector Commitments](#vc)
+[Definitions](#definitions)
 
-[Arguments of Knowledge of Subvector Opening](#AoK)
+[Arguments of Knowledge of Subvector Opening](#arguments-of-knowledge-of-subvector-opening)
 
-[Applications to Proof of Space](#PoS)
+[Applications to Proof of Space](#applications-to-proof-of-space)
 
 
 **[Problems and Directions]**
 
-[Problem 1:  *Augmented Updatability and Aggregation for SVC*] 
+[Problem 1:  *Augmented Updatability and Aggregation for SVC*]() 
 
-[Problem 2:  *Functional Vector Commitments*] 
+[Problem 2:  *Functional Vector Commitments*]() 
 
-[Problem 3:  *Improving Merkle Trees Openings*] 
+[Problem 3:  *Improving Merkle Trees Openings*]() 
 
-[Problem 4:  *Updatability Property for SVC*] 
+[Problem 4:  *Updatability Property for SVC*]()
 
-[Problem 5:  *Cross Incremental Aggregation and Keyless-Updatability*]
+[Problem 5:  *Cross Incremental Aggregation and Keyless-Updatability*]()
 
-[Problem 6:  *Assumptions and Algebraic Settings for VC*]
+[Problem 6:  *Assumptions and Algebraic Settings for VC*]()
 
-[Problem 7:  *Incrementally aggregatable SVC from prime order groups*]
+[Problem 7:  *Incrementally aggregatable SVC from prime order groups*]()
 
 ## Terminology 
 
-### Definitions for Vector Commitments  
+### Definitions ### 
 
 A **Vector commitment** (VC) first defined by [Catalano and Fiore](https://eprint.iacr.org/2011/495.pdf) allow to commit to a sequence of values and 
 later on reveal one or many values at a specific position and prove it consistent with the initial commitment.
@@ -70,7 +70,7 @@ Arguments of Knowledge (AoK) for a Vector Commitment scheme comes in different f
    one can create a short proof that C' is a commitment to a subvector of the vector committed in C. 
  
 
-### Applications to Proof of Space
+### Applications to Proof of Space ###
 
 Vector Commitments are essential in apllications to Proof of Space (Proof of Storage). 
 Combined with Arguments of Knowledge of Subvector Opening (AoK) with constant-size proofs, the Vector Commitment scheme can lead to an 
@@ -104,9 +104,9 @@ Moreover, in Filecoin it is necessary to prove useful space, i.e. storage space 
  Proof of Replication (PoRep): When the vector to be committed encodes some real data *D*, we replace the advice with a “replica” vector *R* 
  defined as *R* = *D* + *A*.   
    
-## Problems and Directions 
+## Problems and Directions ##
 
-### Problem 1:  *Augmented Updatability and Aggregation for SVC*
+### Problem 1:  *Augmented Updatability and Aggregation for SVC* ###
 
 In an SVC, the notion of Cross-CommitmentAggregation allows to compute a succinct proof of opening for a set of positions from different vectors
 committed separately.
@@ -140,7 +140,7 @@ when  considering  strong  requirements  all  together.
  
  
 
-### Problem 2: *Functional Vector Commitments* 
+### Problem 2: *Functional Vector Commitments* ###
 The only constructions of Functional VCs known today are for openings to linear functions, where messages are vectors and commitments can later 
 be opened to a specific  linear  function of  the  vector  coordinates.  
 We  would  like  to  extend  this property to broader classes of functions. 
@@ -159,7 +159,7 @@ Some key requirements for such a scheme are:
     - proving time should be sub-linear in the vector size
   
 
-### Problem 3: *Improving Merkle Trees Openings*
+### Problem 3: *Improving Merkle Trees Openings* ###
  The current PoS uses Merkle trees where k independent openings are aggregated via a general-purpose SNARK, using a SNARK-friendly collision-resistant 
  hash for the Merkle tree (Poseidon hash function). One interesting research direction is to optimize a SNARK for this
  particular type of problem. 
@@ -184,7 +184,7 @@ Algebraic hashes like Poseidon, to some extend, are more efficient in such a set
 When opening Merkle tree commitments we can avoid the logarithmic overhead by either storing some levels of the tree, 
 or portions of the path from leaves to the root. Finding the best trade-off in such scenarios is important for PoS applications. 
 
-##Problem 4: *Updatability Property for SVC* 
+## Problem 4: *Updatability Property for SVC* ##
 While we know a few SVC schemes that have constant-size parameters, none of them is updatable but they are only hint-updatable.
 Hint-updatability essentially requires more interaction to perform an update as a user should first obtain an opening for the position that changes, 
 before performing its update locally.
@@ -192,11 +192,11 @@ The lattice-based construction from ([PSTY13])[https://www.iacr.org/archive/euro
 not requiring  any type  of  key, while it does not support neither subvector openings, nor any form of aggregation. 
 Overcoming these limitations for known schemes is a further step to achieve better VC.
 
-##Problem 5: *Cross Incremental Aggregation and Keyless-Updatability*
+## Problem 5: *Cross Incremental Aggregation and Keyless-Updatability* ##
 Seems that building VC with keyless-updatability and cross-commitment incremental  aggregationis still an open problem.  
 No scheme with constant-size public parameters that achieves these two properties simultaneously is known to date. 
   
-##Problem 6: *Assumptions and Algebraic Settings for VC* 
+## Problem 6: *Assumptions and Algebraic Settings for VC* ##
 
    - Lattice Assumptions: There is little work done to construct VCs based on lattice assumptions.  
     Papamanthou et al. instantiate a homomorphic Merkle tree construction using Ajtai's hash function to obtain a lattice-based VC 
@@ -210,7 +210,7 @@ No scheme with constant-size public parameters that achieves these two propertie
      Bulletproofs is an example of such VC scheme with logarithmic-size openings. 
      The challenge is to obtain concise VCs with preferable constant size openings from DLog assumptions. 
       
-##Problem 7: *Incrementally Aggregatable SVC from Prime Order Groups* 
+## Problem 7: *Incrementally Aggregatable SVC from Prime Order Groups* ##
 Almost all known constructions for SVC are based on bilinear groups or group of unknown order. 
 Would be interesting to explore constructing such schemes from discrete log assumptions in prime order groups. 
 Such a scheme may be appealing for efficiency purposes since unknown order groups are typically less efficient than prime order groups.
