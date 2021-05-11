@@ -15,7 +15,7 @@ This is a list of research questions in the area of Vector Commitments and their
 
 **[Problems and Directions]**
 
-[Problem 1:  *Augmented Updatability and Aggregation for SVC*](#problem-one) 
+[Problem 1:  *Augmented Updatability and Aggregation for SVC*](#p1) 
 
 [Problem 2:  *Functional Vector Commitments*]() 
 
@@ -25,7 +25,7 @@ This is a list of research questions in the area of Vector Commitments and their
 
 [Problem 5:  *Cross Incremental Aggregation and Keyless-Updatability*]()
 
-[Problem 6:  *Assumptions and Algebraic Settings for VC*]()
+[Problem 6:  *Assumptions and Algebraic Settings for VC*](#p6)
 
 [Problem 7:  *Incrementally aggregatable SVC from prime order groups*]()
 
@@ -104,9 +104,9 @@ Moreover, in Filecoin it is necessary to prove useful space, i.e. storage space 
  Proof of Replication (PoRep): When the vector to be committed encodes some real data *D*, we replace the advice with a “replica” vector *R* 
  defined as *R* = *D* + *A*.   
    
-## Problems and Directions ##
+# Problems and Directions 
 
-### Problem 1:  Augmented Updatability and Aggregation for SVC {#problem-one}
+## Problem 1:  Augmented Updatability and Aggregation for SVC {#p1}
 
 In an SVC, the notion of Cross-CommitmentAggregation allows to compute a succinct proof of opening for a set of positions from different vectors
 committed separately.
@@ -115,7 +115,7 @@ I and J respectively.
 Seems that achieving both these properties for SVC is not a trivial task, and there are some limitations
 when  considering  strong  requirements  all  together.    
 
-#### Directions:
+### Directions:
  - Better Understand Updatability and Aggregation:
   Seems that updatability is actually a more nuanced notion when considered in presence of aggregation: for example, not all VCs support updating 
   aggregated proofs. Same holds for updatability of cross-aggregated proofs. 
@@ -140,12 +140,12 @@ when  considering  strong  requirements  all  together.
  
  
 
-### Problem 2: *Functional Vector Commitments* ###
+## Problem 2: *Functional Vector Commitments* {#p2}
 The only constructions of Functional VCs known today are for openings to linear functions, where messages are vectors and commitments can later 
 be opened to a specific  linear  function of  the  vector  coordinates.  
 We  would  like  to  extend  this property to broader classes of functions. 
 
-#### Directions:
+### Directions:
 - Lower Bounds and Impossibilities: Understand the difficulty to construct functional VC for quadratic functions, then for other classes of functions. 
 State the requirements and lower bounds for achieving such properties. 
 
@@ -159,12 +159,12 @@ Some key requirements for such a scheme are:
     - proving time should be sub-linear in the vector size
   
 
-### Problem 3: *Improving Merkle Trees Openings* ###
+## Problem 3: *Improving Merkle Trees Openings* {#p3}
  The current PoS uses Merkle trees where k independent openings are aggregated via a general-purpose SNARK, using a SNARK-friendly collision-resistant 
  hash for the Merkle tree (Poseidon hash function). One interesting research direction is to optimize a SNARK for this
  particular type of problem. 
 
-#### Directions:
+### Directions:
 - SNARK-friendly Hashing: 
 We can think of replacing all the hash functions with SNARK-friendly (algebraic) hash functions. 
 Unfortunately, this would result in a loss in the cost of commiting to a vector. A possible 
@@ -184,19 +184,19 @@ Algebraic hashes like Poseidon, to some extend, are more efficient in such a set
 When opening Merkle tree commitments we can avoid the logarithmic overhead by either storing some levels of the tree, 
 or portions of the path from leaves to the root. Finding the best trade-off in such scenarios is important for PoS applications. 
 
-## Problem 4: *Updatability Property for SVC* ##
+## Problem 4: *Updatability Property for SVC* {#p4}
 While we know a few SVC schemes that have constant-size parameters, none of them is updatable but they are only hint-updatable.
 Hint-updatability essentially requires more interaction to perform an update as a user should first obtain an opening for the position that changes, 
 before performing its update locally.
-The lattice-based construction from ([PSTY13])[https://www.iacr.org/archive/eurocrypt2013/78810351/78810351.pdf] has a strong updatability property, 
+The lattice-based construction from [[PSTY13]](https://www.iacr.org/archive/eurocrypt2013/78810351/78810351.pdf) has a strong updatability property, 
 not requiring  any type  of  key, while it does not support neither subvector openings, nor any form of aggregation. 
 Overcoming these limitations for known schemes is a further step to achieve better VC.
 
-## Problem 5: *Cross Incremental Aggregation and Keyless-Updatability* ##
+## Problem 5: *Cross Incremental Aggregation and Keyless-Updatability* {#p5}
 Seems that building VC with keyless-updatability and cross-commitment incremental  aggregationis still an open problem.  
 No scheme with constant-size public parameters that achieves these two properties simultaneously is known to date. 
   
-## Problem 6: *Assumptions and Algebraic Settings for VC* ##
+## Problem 6: *Assumptions and Algebraic Settings for VC* {#p6}
 
    - Lattice Assumptions: There is little work done to construct VCs based on lattice assumptions.  
     Papamanthou et al. instantiate a homomorphic Merkle tree construction using Ajtai's hash function to obtain a lattice-based VC 
@@ -210,7 +210,7 @@ No scheme with constant-size public parameters that achieves these two propertie
      Bulletproofs is an example of such VC scheme with logarithmic-size openings. 
      The challenge is to obtain concise VCs with preferable constant size openings from DLog assumptions. 
       
-## Problem 7: *Incrementally Aggregatable SVC from Prime Order Groups* ##
+## Problem 7: *Incrementally Aggregatable SVC from Prime Order Groups* {#p7}
 Almost all known constructions for SVC are based on bilinear groups or group of unknown order. 
 Would be interesting to explore constructing such schemes from discrete log assumptions in prime order groups. 
 Such a scheme may be appealing for efficiency purposes since unknown order groups are typically less efficient than prime order groups.
