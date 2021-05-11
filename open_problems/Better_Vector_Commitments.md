@@ -4,7 +4,7 @@
 
 This is a list of research questions in the area of Vector Commitments and their applications to Proof of Space (and useful space) in the Filecoin protocol.
 
-**[Terminology]**
+**[Background](#background)**
 
 [Definitions](#definitions)
 
@@ -25,9 +25,9 @@ This is a list of research questions in the area of Vector Commitments and their
 
 [Problem 5: Assumptions and Algebraic Settings for VC](#problem-5-assumptions-and-algebraic-settings-for-vc)
 
-## Terminology 
+## Backgroun
 
-### Definitions ### 
+### Definitions  
 
 A **Vector commitment** (VC) first defined by [Catalano and Fiore](https://eprint.iacr.org/2011/495.pdf) allow to commit to a sequence of values and 
 later on reveal one or many values at a specific position and prove it consistent with the initial commitment.
