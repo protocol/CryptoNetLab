@@ -186,7 +186,7 @@ Hint-updatability essentially requires more interaction to perform an update as 
   understand the limits of combining such properties and improve existing constructions.
   
 - Cross Incremental Aggregation and Keyless-Updatability: 
-Seems that building VC with keyless-updatability and cross-commitment incremental  aggregationis still an open problem.  
+Building VC with keyless-updatability and cross-commitment incremental aggregation is still an open problem.  
 No scheme with constant-size public parameters that achieves these two properties simultaneously is known to date. 
 
 - Lattice-Based SVC with Updatability: The lattice-based construction from [[PSTY13]](https://www.iacr.org/archive/eurocrypt2013/78810351/78810351.pdf) 
