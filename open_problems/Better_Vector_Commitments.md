@@ -115,11 +115,11 @@ Some directions can be explored to improve existing constructions and understand
   
  - Reduce the Size of Public Parameters: 
  The  known pairing-based schemes  with  cross-commitment aggregation  rely  on  long  public  parameters.  
- They  require  public  parameters  of  size  linear  in  thesize  of  the  committed  vector.  
- The  trusted  setups  for  these  schemes  seem  to  be  compatible  withsome ceremonies performed in practice for pairing-based SNARKs like Groth16 
+ They  require  public  parameters  of  size  linear  in  the size  of  the  committed  vector.  
+ The  trusted  setups  for  these  schemes  seem  to  be  compatible  with some ceremonies performed in practice for pairing-based SNARKs like Groth16 
  (e.g. ”powers of tau” ceremonies from Zcash or from Filecoin). 
  Reducing the size of these parameters or their dependency on the length of vectors to be committed, possibly by means of aggregation 
- (not only for openings, butalso for commitments) is a interesting direction to explore in order to improve the storage-bandwidth trade-off.
+ (not only for openings, but also for commitments) is a interesting direction to explore in order to improve the storage-bandwidth trade-off.
  
  - Aggregation for Commitments and Openings:
  The RSA-based Key VC scheme from Tomescu et al. [[TXN20]](https://eprint.iacr.org/2020/1239) requires
@@ -140,9 +140,9 @@ We  would  like  to  extend  this property to broader classes of functions.
 State the requirements and lower bounds for achieving such properties. 
 
 - Arguments of Knowledge of Subvector Function Evaluation:
-We can construct a functional version of AoK. This enables one to prove knowledge of a computation on the values in a subvector: one can
+We can construct a SVC together with a functional version of AoK. This enables one to prove knowledge of a computation on the values in a subvector: one can
 create two vector commitments C to m and C′ to a subvector m' of m together with a short proof that y is the result of applying f(m') computation 
-to the subvector m' committed in C′.  Depending of the nature of this function, the difficulty of constructing such SVC can vary.
+to the subvector m' committed in C′. 
 Some key requirements for such a scheme are:
     - pre-processing for proving the opening can be linear in the size of m' 
     - public parameters (opening keys) size is ideally sub-linear in size of vector m
