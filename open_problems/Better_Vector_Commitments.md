@@ -175,7 +175,7 @@ When opening Merkle tree commitments we can avoid the logarithmic overhead by ei
 or portions of the path from leaves to the root. Finding the best trade-off in such scenarios is important for PoS applications. 
 
 ## Problem 4: Updatability Property for SVC 
-Updatability it is an essential notion for SVC. It comes in different degrees: hint-updatability that use dynamic keys to make the updates, key-updatability with static keys or keyless updatability. 
+Updatability it is an essential notion for SVC. It comes in different degrees: hint-updatability that uses dynamic keys to make chenges, key-updatability with static keys or even better, keyless updatability. 
 Hint-updatability essentially requires more interaction to perform an update as a one should first obtain an opening for the position to be changed, before performing the update. 
 
 ### Directions: 
