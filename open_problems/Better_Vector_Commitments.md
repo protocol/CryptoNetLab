@@ -176,7 +176,7 @@ or portions of the path from leaves to the root. Finding the best trade-off in s
 
 ## Problem 4: Updatability Property for SVC 
 Updatability it is an essential notion for SVC. It comes in different degrees: hint-updatability that uses dynamic keys to make chenges, key-updatability with static keys or even better, keyless updatability. 
-Hint-updatability essentially requires more interaction to perform an update as a one should first obtain an opening for the position to be changed, before performing the update. 
+Hint-updatability essentially requires more interaction to perform an update as one should first obtain an opening for the position to be changed, before performing the update. 
 
 ### Directions: 
  - Better Understand Updatability and Aggregation: We aim on constructing VCs with more flexible updatability properties in combination with other interesting features like aggregation. 
