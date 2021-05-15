@@ -17,6 +17,18 @@ This is a list of research questions in the area of SNARKs and their application
 
 [Problem 2:  Transparent SNARKs](#problem-2-transparent-snarks) 
 
+[Problem 3: SNARKs with Constant Proof Size](#problem-3-snarks-with-constant-proof-size) 
+
+[Problem 4: Multiprover Interactive Proofs](#problem-4-multiprover-interactive-proofs) 
+
+[Problem 5: Better Polynomial Commitments for SNARKs](#problem-5-better-polynomial-commitments-for-snarks)
+
+[Problem 6: SNARKs for Privacy-Preserving Computation](#problem-6-snarks-for-privacy-preserving-computation)
+
+[Problem 7: Post-Quantum SNARKs](#problem-7-post-quantum-snarks)
+
+[Problem 8: New Levels of Security for SNARKs](#problem-8-new-levels-of-security-for-snarks)
+
 ## Background
 
 ### Definitions  
@@ -78,7 +90,7 @@ To better understand the context, we briefly revise the blockchain terminology:
 The sidechain (layer-2) where ZK-rollups happen can be optimised to reduce transaction size further. 
 
 
-## Problems and  Directions
+## Problems and Directions
    
 ### Problem 1: Scaling SNARKs
 
@@ -109,7 +121,7 @@ result in slowdowns in practical applications.
  - Verifier Time: O(n + log |C|) where n is the length of the input to the circuit (without the witness)
     
  
-### Problem 3:  SNARKs with Constant Proof Size
+### Problem 3: SNARKs with Constant Proof Size
 The state of the art for SNARKs with constant proof size is 
 Groth16 construction \cite{EC:Groth16}. This scheme achieves great efficiency for the verifier and proof size, 
 but it relies on a trusted setup, the generation of a structured common reference string CRS. 
