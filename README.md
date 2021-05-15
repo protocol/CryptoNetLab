@@ -97,7 +97,8 @@ We welcome discussion of our [current Open Problems](https://github.com/protocol
    <tr>
       <td rowspan="5">Vector Commitments</td>
      <td> Augmented Aggregation for SVC</td>
-      <td rowspan="5"> See <a href="https://github.com/protocol/CryptoNetLab/blob/main/open_problems/Better_Vector_Commitments.md">here</a> </td>
+      <td rowspan="5"> See <a href="https://github.com/protocol/CryptoNetLab/blob/main/open_problems/Better_Vector_Commitments.md">repo</a> and
+      <a href=https://drive.google.com/file/d/18Cfggrali8BgFaXS1apCQLn0n3sW-Aqu/view?usp=sharing>pdf</a> </td>
    </tr><tr>
       <td> Functional Vector Commitments</td>
     </tr><tr>
