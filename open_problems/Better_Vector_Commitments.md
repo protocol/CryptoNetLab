@@ -3,6 +3,7 @@
 ---
 
 This is a list of research questions in the area of Vector Commitments and their applications to Proof of Space (and useful space) in the Filecoin protocol.
+For more details about the state-of-the-art and motivation, see the complete [statement document](https://drive.google.com/file/d/18Cfggrali8BgFaXS1apCQLn0n3sW-Aqu/view?usp=sharing). 
 
 **[Background](#background)**
 
