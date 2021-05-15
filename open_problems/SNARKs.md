@@ -15,7 +15,7 @@ This is a list of research questions in the area of SNARKs and their application
 
 [Problem 1:  Scaling SNARKs](#problem-1-scaling-snarks) 
 
-[Problem 2:  ](#problem-2 ) 
+[Problem 2:  Transparent SNARKs](#problem-2-transparent-snarks) 
 
 ## Background
 
@@ -99,8 +99,8 @@ one preserving current Groth16 SNARKs and the other using recursive SNARKs.
 Removing trusted setup from SNARKS is a crucially important problem both theoretically and practically. 
 While many advances have been made towards transparent SNARKs, a more ambitious goal would be to achieve: 
  - Prover Time: O(|C|) i.e. linear in circuit size
- - Proof size: O(\log |C|)
- -  Verifier Time: O(n + \log |C|) where n is the length of the input to the circuit (without the witness)
+ - Proof size: O(log |C|)
+ -  Verifier Time: O(n + log |C|) where n is the length of the input to the circuit (without the witness)
     
 All the known candidates for transparent SNARKs are off by (at least)
 some logarithmic  factor in either of those parameters, which
