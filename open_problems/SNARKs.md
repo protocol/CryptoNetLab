@@ -11,7 +11,7 @@ This is a list of research questions in the area of SNARKs and their application
 [Applications of SNARKs](#applications-of-snarks)
 
 
-**[Problems and Directions]**
+**[Problems and Directions](#problems-and-directions)**
 
 [Problem 1:  Scaling SNARKs](#problem-1-scaling-snarks) 
 
