@@ -76,14 +76,24 @@ We welcome discussion of our [current Open Problems](https://github.com/protocol
       <td>Verifiable Capacity Bound Functions</td>
     </tr>
   <tr>
-      <td rowspan="3">SNARKs</td>
-      <td></td>
-      <td rowspan="3"></td>
+      <td rowspan="8">SNARKs</td>
+      <td>Scaling SNARKs</td>
+      <td rowspan="8"></td>
     </tr><tr>
-      <td> (to be added soon) </td>
+      <td>Transparent SNARKs</td>
+     </tr><tr>
+      <td>SNARKs with Constant Proof Size</td>
+     </tr><tr>
+      <td>Multiprover Interactive Proofs</td>
     </tr><tr>
-      <td></td>
-    </tr> 
+      <td>Better Polynomial Commitments for SNARKs</td>
+    </tr><tr>
+      <td>SNARKs for Privacy-Preserving Computation</td>
+    </tr><tr>
+      <td>Post-Quantum SNARKs</td>
+    </tr><tr>
+      <td>New Levels of Security for SNARK</td>
+    </tr>
    <tr>
       <td rowspan="5">Vector Commitments</td>
      <td> Augmented Aggregation for SVC</td>
