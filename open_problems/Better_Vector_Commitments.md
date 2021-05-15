@@ -196,17 +196,18 @@ Overcoming these limitations for known schemes is a further step to achieve bett
 
   
 ## Problem 5: Assumptions and Algebraic Settings for VC 
-
+  All existing concise VC schemes with constant-size openings are based either on groups of unknown order or on bilinear groups.  
+  It is thus an open question to find a VC that can be based on more light assumptions that eventually would not need a trusted setup. 
+  
+### Directions:  
    - Lattice Assumptions: There is little work done to construct VCs based on lattice assumptions.  
     Papamanthou et al. instantiate a homomorphic Merkle tree construction using Ajtai's hash function to obtain a lattice-based VC 
     scheme but this has still logarithmic-size openings. A more challenging problem is finding a lattice-based scheme with constant-size openings. 
     A possible approach is to start from understanding the existing lattice-based accumulators with constant-sized proofs. 
     Turning them into a strongly-binding vector commitment would probably require 
     some extra challenging work.
-   - DLog Groups for VC: All existing concise VC schemes are based either on groups of unknown order or on bilinear groups.
-     It is thus an open question to find a VC that can be based on the discrete-logarithm assumption or a related one, 
-     like CDH in groups without pairings.
-     Bulletproofs is an example of such VC scheme with logarithmic-size openings. 
+   - DLog Groups for VC:  Seems more difficult to find a VC that can be based on the discrete-logarithm assumption or a related one, 
+     like CDH in groups without pairings. Bulletproofs is an example of such VC scheme with logarithmic-size openings. 
      The challenge is to obtain concise VCs with preferable constant size openings from DLog assumptions. 
    - Incrementally aggregatable SVC from prime order groups: Almost all known constructions for SVC are based on bilinear groups or group of unknown order. 
     Would be interesting to explore constructing such schemes from discrete log assumptions in prime order groups. 
