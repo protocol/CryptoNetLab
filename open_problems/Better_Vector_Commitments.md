@@ -106,11 +106,9 @@ Moreover, in Filecoin it is necessary to prove useful space, i.e. storage space 
 ## Problem 1: Augmented Aggregation for SVC  
 
 In an SVC, the notion of aggregation  models  the  ability  of  computing  an  opening  for  a  set  of  positions I and J starting from two openings for sets of positions I and J respectively.
-
 Moreover, Cross-Commitment Aggregation allows to compute a succinct proof of opening for a set of positions from different vectors
 committed separately.    
-
-Some directions can be explored to improve existing constructions and understand the limits of achieving stronger notions of aggregation.
+It eould be interesting to understand the limits of achieving stronger notions of aggregation and then improve existing constructions.
 
 ### Directions:
   
