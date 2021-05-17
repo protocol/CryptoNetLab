@@ -164,9 +164,9 @@ This would greatly impact the feasibility of level-2 off-chain solutions as well
 
 ### Problem 4: Multiprover Interactive Proofs
   One interesting approach to build better SNARKs is to have as a departing point a very efficient Multiprover Interactive Proofs (MIPs)
-e.g. [Clover](https://eprint.iacr.org/2014/846). Clover proposes a new circuit arithmetization and a
+such as [Clover](https://eprint.iacr.org/2014/846). Clover proposes a new circuit arithmetization and a
 soundness analysis that avoids repetition for better performances.
-The classical compilation technique from [Bitansky and Chiesa](https://eprint.iacr.org/2012/461) show how to obtaining SNARKs from MIPs
+The classical compilation technique from [Bitansky and Chiesa](https://eprint.iacr.org/2012/461) show how to obtain SNARKs from MIPs
 using fully-homomorphic encryption (FHE). 
 They compile any complexity preserving MIP that also has
 a knowledge-soundness property into a complexity preserving SNARK under a natural but non-standard
