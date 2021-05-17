@@ -78,7 +78,7 @@ We welcome discussion of our [current Open Problems](https://github.com/protocol
   <tr>
       <td rowspan="8">SNARKs</td>
       <td>Scaling SNARKs</td>
-      <td rowspan="8"> See <a href="https://github.com/protocol/CryptoNetLab/blob/main/open_problems/SNARKs.md">here</a> </td>
+      <td rowspan="8"> See <a href="https://github.com/protocol/CryptoNetLab/blob/main/open_problems/Open_Problems_for_SNARKs.md">here</a> </td>
     </tr><tr>
       <td>Transparent SNARKs</td>
      </tr><tr>
