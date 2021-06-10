@@ -141,6 +141,7 @@ You can vew our current slate of publications, talks, and other resources on [ou
 ## Team
 
 > -   [Nicola Greco](https://research.protocol.ai/authors/nicola-greco)
+> -   [Rosario Gennaro](https://research.protocol.ai/authors/rosario-gennaro)
 > -   [Irene Giacomelli](https://research.protocol.ai/authors/irene-giacomelli)
 > -   [Anca Nitulescu](https://research.protocol.ai/authors/anca-nitulescu/)
 > -   [Luca Nizzardo](https://research.protocol.ai/authors/luca-nizzardo)
