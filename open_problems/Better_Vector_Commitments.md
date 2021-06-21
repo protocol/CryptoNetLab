@@ -100,6 +100,61 @@ As an illustrative application for a PoS, Filecoin system uses PoS to commit to 
 Moreover, in Filecoin it is necessary to prove useful space, i.e. storage space that can be used to keep real-world data.  
  Proof of Replication (PoRep): When the vector to be committed encodes some real data *D*, we replace the advice with a “replica” vector *R* 
  defined as *R* = *D* + *A*.   
+ 
+ *Requirements for VC in PoS.*
+Ideally, a VC scheme for Proof of Space should satisfy:
+
+– Conciseness: Mentioned solutions based on Merkle trees do not have commitment sizes independent
+of the vector size. A way to overcome this lack of conciseness is to use a SNARK for the openings at
+the cost of a trusted setup and some proving overhead.
+
+– Transparent Setup: Most of the concise VC schemes rely on a trusted setup, either in the bilinear
+groups setting or RSA groups setting. While class groups may be an alternative for transparent VCs,
+it also comes with a significant loss in efficiency.
+
+– Large Vector Sizes: We ask for the VC scheme to support vector of large sizes at a minimal costs.
+Nevertheless, in existing schemes, this is reflected in the size of the setup or in the verifier’s cost for
+subvector openings. Two options to overcome the drawbacks of committing to large vectors:
+
+    - Augmented Aggregation: One way to circumvent the upper bound fixed by the setup on the vector
+size is by cross-commitment aggregation for subvector openings. In this way, any large vector can
+be split in smaller chunck that are committed independently and then, opening a subvector of
+the initial large vector is done by aggregating openings of different chinks. However, VC schemes
+that allow to aggregate opening proofs across different commitments still require the verifier to
+keep and read the initial commitments in order to check the aggregated openings.
+
+    - Size-Independent Setup: Few VC schemes allow to commit to vectors of unbounded size. Even if
+this is possible in theory, in practice, the efficiency degrades with the increasing sizes of vectors,
+either in the prover overhead or in the verification process.
+– AoK for Openings: A dedicated AoK for subvector openings allow to obtain proofs of fixed size
+and a succinct verifier that does not have to read the opened values. This is important in PoS that
+require to open a large number of positions in a commitment.
+– Functional VC: In PoS one needs to also apply functions to the values in the vector. This can be
+realised in various ways:
+
+    - Compatible with SNARKs: Even if the succinct openings can be done independent of SNARKs,
+the VC scheme should allow for combining proofs of openings and succinct proofs of computations
+done on these openings.
+
+    - AoK for Functional Openings: Another way to perform these computation and prove them effi-
+ciently, is to design a VC scheme that allow opening function evaluations of the required positions.
+
+To be compatible with PoS use-case, the inputs to the function (the openings) should not be send
+
+to the verifier: just the resulting evaluation and a proof of knowledge of the openings and com-
+putation should suffice.
+
+– Efficient Prover: The prover should be able to perform openings in an efficient way, avoiding
+dependencies on the size of the vectors, which in PoS applications are notably large.
+
+    - Trade-off Memory/Computation: In Merkle Trees there is a possibility to store parts of the tree
+in order to improve the prover computation of openings.
+
+    - Proving Time Independent of Vector Size: Opening a subvector with an overhead depending only
+on the number of positions to be opened can bring a major improvement in PoS.
+
+– Updatability: The property of updating commitments are meaningful for the decentralised setting
+only if these updates are possible with a position-independent key or in a key-less manner.
    
 # Problems and Directions 
 
