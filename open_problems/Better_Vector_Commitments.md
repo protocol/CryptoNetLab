@@ -115,7 +115,7 @@ it also comes with a significant loss in efficiency.
 – Large Vector Sizes: We ask for the VC scheme to support vector of large sizes at a minimal costs.
 Nevertheless, in existing schemes, this is reflected in the size of the setup or in the verifier’s cost for
 subvector openings. Two options to overcome the drawbacks of committing to large vectors:
-     - Augmented Aggregation: One way to circumvent the upper bound fixed by the setup on the vector
+    - Augmented Aggregation: One way to circumvent the upper bound fixed by the setup on the vector
 size is by cross-commitment aggregation for subvector openings. In this way, any large vector can
 be split in smaller chunck that are committed independently and then, opening a subvector of
 the initial large vector is done by aggregating openings of different chinks. However, VC schemes
