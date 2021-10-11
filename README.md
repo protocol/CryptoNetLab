@@ -145,7 +145,7 @@ You can vew our current slate of publications, talks, and other resources on [ou
 > -   [Irene Giacomelli](https://research.protocol.ai/authors/irene-giacomelli)
 > -   [Anca Nitulescu](https://research.protocol.ai/authors/anca-nitulescu/)
 > -   [Luca Nizzardo](https://research.protocol.ai/authors/luca-nizzardo)
-> -   [Sarah Azouvi](https://research.protocol.ai/authors/sarah-azouvi)
+> -   [Matteo Campanelli]()
 > -   [Nicolas Gailly](https://research.protocol.ai/authors/nicolas-gailly)
 
 ## Contact
