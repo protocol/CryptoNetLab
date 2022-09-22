@@ -6,11 +6,13 @@
 
 # CryptoNetLab
 
-**Welcome to the CryptoNetLab public repository. Here you will be able to learn about and contribute to our Open Problems, RFPs, and Research Projects, as well as keep tabs on what we're planning for the future.** You can also follow our work on our [Protocol Labs Research webpage](https://research.protocol.ai/groups/cryptonetlab/) and the [PL Research blog](https://research.protocol.ai/blog/) by [subscribing](https://protocol.us4.list-manage.com/subscribe?MERGE0=&u=09d704b0125b11d44d67d4617&id=7aa0f1150b&subscribe=) to the PL Research newsletter.
+Our [webpage](https://cryptonet.org/)
+
+**Welcome to the CryptoNet public repository. Here you will be able to learn about and contribute to our Open Problems, RFPs, and Research Projects, as well as keep tabs on what we're planning for the future.**  
 
 ## Table of Contents
 
-- [The CryptoNetLab](#cryptonetlab)
+- [CryptoNet](#cryptonet)
   - [Mission & Vision](#mission--vision)
 - [Research](#research)
   - [Open Problems](#research)
@@ -21,26 +23,26 @@
 - [Team](#team)
 - [Contact](#contact)
 
-## `CryptoNetLab`
-CryptoNetLab develops and applies new cryptographic tools to secure computation and communication systems.
+## `CryptoNet`
+CryptoNet develops and applies new cryptographic tools to secure computation and communication systems.
 We facilitate the development and incorporation of cryptographic tools to increase security and privacy of communication, and engender new capabilities across the Web 3.0 stack. Much of our past and current work includes designing, proving, and improving the building blocks enabling Filecoin, a decentralized storage network.
 
 
 ### Mission & Vision
 
-CryptoNetLab aims to function as a Public Good Cryptography Lab providing technological empowerment to the creators and users of Web 3.0 technologies. We prefer to work collaboratively following a distributed and permissionless research model: our goal is to become a pass-through layer to cryptography research.
+CryptoNet aims to function as a Public Good Cryptography Lab providing technological empowerment to the creators and users of Web 3.0 technologies. We prefer to work collaboratively following a distributed and permissionless research model: our goal is to become a pass-through layer to cryptography research.
 
 Please [join the discussion](https://github.com/protocol/CryptoNetLab/discussions) to learn how you can work with us!
 
 ## Research
 
-CryptoNetlab’s current foci are:
+CryptoNet’s current foci are:
 
  -   **Cryptographic primitives**: Filecoin and other Web 3.0 technologies rely on the performance and security of cryptographic primitives. Our endeavours include Proof of Replication (PoRep), Proof of SpaceTime (PoST), SEALSTACK, SNARKs, and VDFs.
  -   **Blockchain infrastructure**: We are working to advance the state of the art of generic blockchain constructions.
  -   **Web 3.0 protocol improvements**: Our research contributes improvements to the transaction layer of the Filecoin protocol and its components, including mining, repair, security, and storage. These improvements may be generalized to other Web 3.0 technologies.
 
- Much of CryptoNetLab’s past work is exhibited in the Filecoin Research [website](https://research.filecoin.io/) and [GitHub repo](https://github.com/filecoin-project/research/).
+ Much of CryptoNet’s past work is exhibited in the Filecoin Research [website](https://research.filecoin.io/) and [GitHub repo](https://github.com/filecoin-project/research/).
 
 ### Open Problems
 
@@ -124,7 +126,7 @@ We welcome discussion of our [current Open Problems](https://github.com/protocol
 
 ### RFPs
   
- As we develop and post RFPs, they will be posted in [this github repo](https://github.com/protocol/research-RFPs).
+ As we develop and post RFPs, they will be posted on [our page](https://cryptonet.org/grants).
   
 ### Collaborations
   
@@ -136,7 +138,7 @@ Please join us for discussion an  anything in the CryptoNetLab orbit on our [dis
   
 ## Publications, Talks, & Tutorials
 
-You can vew our current slate of publications, talks, and other resources on [our lab webpage](https://research.protocol.ai/groups/cryptonetlab/).
+You can vew our current slate of publications, talks, and other resources on [our webpage](https://cryptonet.org/).
 
 ## Team
 
@@ -145,7 +147,7 @@ You can vew our current slate of publications, talks, and other resources on [ou
 > -   [Irene Giacomelli](https://research.protocol.ai/authors/irene-giacomelli)
 > -   [Anca Nitulescu](https://research.protocol.ai/authors/anca-nitulescu/)
 > -   [Luca Nizzardo](https://research.protocol.ai/authors/luca-nizzardo)
-> -   [Matteo Campanelli]()
+> -   [Matteo Campanelli](https://research.protocol.ai/authors/matteo-campanelli/)
 > -   [Nicolas Gailly](https://research.protocol.ai/authors/nicolas-gailly)
 
 ## Contact
